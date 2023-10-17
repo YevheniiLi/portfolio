@@ -9,7 +9,7 @@ export const projectExperience = [
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
+    name: "Web App Design",
     projects: 63,
     icon: CiMobile1,
     bg: "#EEC048",

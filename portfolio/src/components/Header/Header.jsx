@@ -16,7 +16,7 @@ initial="hidden"
 whileInView="show"
 variants={headerVariants}
 viewport={{once: true, amount: 0.25}}
-className={`paddings ${css.wrapper}`
+className={`bg-primary paddings ${css.wrapper}`
 }
 style={{boxShadow: headerShadow}}
 >
@@ -28,15 +28,15 @@ style={{boxShadow: headerShadow}}
   style={getMenuStyles(menuOpened)}
   className={`flexCenter ${css.menu}`}
 >
-      <li><a href="">Services</a></li>
-      <li><a href="">Experience</a></li>
-      <li><a href="">Portfolio</a></li>
-      <li><a href="">Testimonials</a></li>
-      <li className={`flexCenter ${css.phone}`}>
-            <p>+001 (313) 345 678</p>
-            <BiPhoneCall size={"40px"} />
-          </li>
-    </ul>
+  <li><a href="">Services</a></li>
+  <li><a href="">Experience</a></li>
+  <li><a href="">Portfolio</a></li>
+  <li><a href="">Testimonials</a></li>
+  <li className={`flexCenter ${css.phone}`}>
+    <p>+001 (313) 345 678</p>
+    <BiPhoneCall size={"40px"} />
+  </li>
+</ul>
     {/* {for medium and small screens} */}
     <div
           className={css.menuIcon}

@@ -1,0 +1,123 @@
+/* Footer.module.scss */
+
+@import "../../styles/contants.scss";
+
+.wrapper {
+  .container {
+    gap: 20px;
+    padding: 20px;
+
+    .group {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+    }
+
+    .contact {
+        width: 20%; /* Установка ширины для блока с контактами (70% от контейнера) */
+      }
+
+    .social {
+      background-color: #fff;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      box-shadow: rgb(0 0 0 / 5%) -3px 11px 13px 0px;
+      display: flex!important;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px;
+      margin: 20px;
+      gap: .1rem;
+
+      h4 {
+        font-size: 15px;
+        color: #333;
+        margin: 10px 0;
+      }
+
+      h5 {
+        margin: 10px 0;
+        font-size: 0.7rem;
+        color: rgb(172, 172, 172);
+      }
+
+      a {
+        text-decoration: none;
+        color: #007bff;
+      }
+    }
+
+    form {
+        height: 100%;
+        width: 30%;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 100%;
+        background: white;
+        resize: none;
+      }
+
+      .button {
+        outline: none;
+        height: 40px;
+        text-align: center;
+        width: 130px;
+        border-radius: 40px;
+        background: #fff;
+        border: 2px solid #1ECD97;
+        color: #1ECD97;
+        letter-spacing: 1px;
+        text-shadow: 0;
+        font {
+          size: 12px;
+          font-weight: bold;
+        }
+        cursor: pointer;
+        transition: all 0.25s ease;
+        &:hover {
+          color: white;
+          background: #1ECD97;
+        }
+        &:active {
+          letter-spacing: 2px;
+        }
+        .validate { 
+            background: $green
+          }
+      }
+
+
+      
+      .onclic {
+        width: 40px;
+        border-color: #bbbbbb;
+        border-width: 3px;
+        font-size: 0;
+        border-left-color: #1ECD97;
+        animation: rotating 2s 0.25s linear infinite;
+        &:hover {
+          color: #1ECD97;
+          background: white;
+        }
+      }
+      
+      @keyframes rotating {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+}}      

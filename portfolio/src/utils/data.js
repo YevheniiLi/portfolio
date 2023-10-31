@@ -53,67 +53,67 @@ export const workExp = [
 
 export const comments = [
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Joseph (Ojiofor) Chikeme",
+    post: "Front-end developer",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+      "Yevhenii Lymarenko is recommended as a skilled, talented, and hard-working front-end developer with experience in Angular, RxJs, Tailwind CSS, Bootstrap, Javascript, and Typescript. He is also knowledgeable in ReactJS and is constantly seeking ways to improve his knowledge. Excellent communication skills and being a good team player are qualities that are observed in him. He comes highly recommended anytime, any day.",
+    img: "./joseph.jpeg",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Obinna Okoma",
+    post: "UI/UX Designer",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field. I have no doubt that he will continue to thrive and make remarkable contributions to any future projects or teams he become a part of.",
+    img: "./obianna.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Julia Novak",
+    post: "Front-end developer",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+      "During our work together, Yevhenii proved to be a dedicated, responsible and hardworking person. He was always on time and available for calls whenever needed. In general, he is very friendly and welcoming so I had a nice experience working with Yevhenii on the same team.",
+    img: "./yulia.jpeg",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Joseph (Ojiofor) Chikeme",
+    post: "Front-end developer",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+      "Yevhenii Lymarenko is recommended as a skilled, talented, and hard-working front-end developer with experience in Angular, RxJs, Tailwind CSS, Bootstrap, Javascript, and Typescript. He is also knowledgeable in ReactJS and is constantly seeking ways to improve his knowledge. Excellent communication skills and being a good team player are qualities that are observed in him. He comes highly recommended anytime, any day.",
+      img: "./joseph.jpeg",
+    },
+  {
+    name: "Obinna Okoma",
+    post: "UI/UX Designer",
+    comment:
+      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field. I have no doubt that he will continue to thrive and make remarkable contributions to any future projects or teams he become a part of.",
+      img: "./obianna.png",
+    },
+  {
+    name: "Julia Novak",
+    post: "Front-end developer",
+    comment:
+      "During our work together, Yevhenii proved to be a dedicated, responsible and hardworking person. He was always on time and available for calls whenever needed. In general, he is very friendly and welcoming so I had a nice experience working with Yevhenii on the same team.",
+      img: "./yulia.jpeg",
+    },
+  {
+    name: "Joseph (Ojiofor) Chikeme",
+    post: "Front-end developer",
+    comment:
+      "Yevhenii Lymarenko is recommended as a skilled, talented, and hard-working front-end developer with experience in Angular, RxJs, Tailwind CSS, Bootstrap, Javascript, and Typescript. He is also knowledgeable in ReactJS and is constantly seeking ways to improve his knowledge. Excellent communication skills and being a good team player are qualities that are observed in him. He comes highly recommended anytime, any day.",
+      img: "./joseph.jpeg",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Obinna Okoma",
+    post: "UI/UX Designer",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field. I have no doubt that he will continue to thrive and make remarkable contributions to any future projects or teams he become a part of.",
+      img: "./obianna.png",
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
+    name: "Julia Novak",
+    post: "Front-end developer",
     comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+      "During our work together, Yevhenii proved to be a dedicated, responsible and hardworking person. He was always on time and available for calls whenever needed. In general, he is very friendly and welcoming so I had a nice experience working with Yevhenii on the same team.",
+      img: "./yulia.jpeg",
   },
 ];
 

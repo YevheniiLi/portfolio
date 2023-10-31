@@ -14,7 +14,10 @@
     }
 
     .contact {
-        width: 20%; /* Установка ширины для блока с контактами (70% от контейнера) */
+      @media (max-width: $sm), (max-width: $md) {
+        width: 65%;
+      }
+        width: 20%;
       }
 
     .social {
@@ -44,17 +47,22 @@
 
       a {
         text-decoration: none;
-        color: #007bff;
+        color: #18b0cf;
+        font-size: 0.8rem;
       }
     }
+    
 
     form {
+      @media (max-width: $sm), (max-width: $md) {
+        display: none;
+      }
         height: 100%;
         width: 30%;
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
 
       input[type="text"],
       input[type="email"],
@@ -95,7 +103,6 @@
             background: $green
           }
       }
-
 
       
       .onclic {

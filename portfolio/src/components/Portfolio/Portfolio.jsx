@@ -10,7 +10,7 @@ const Portfolio = () => {
  whileInView="show"
  viewport={{ once: false, amount: 0.25 }}
 className={`paddings ${css.wrapper}`}>
-
+<a className="anchor" id="portfolio"></a>
 <div className={`innerWidth flexCenter ${css.container}`}>
     
     <motion.div 
@@ -20,7 +20,7 @@ className={`paddings ${css.wrapper}`}>
             <span className='primaryText'>My Latest Work</span>
             <p style={{marginTop: "10px"}}>Perfect solution for digital experience</p>
         </div>
-    <span className="secondaryText">Explore More Works</span>
+        <a href="https://github.com/YevheniiLi?tab=repositories" className="secondaryText">Explore More Works</a>
         </motion.div> 
 
         {/* {images} */}

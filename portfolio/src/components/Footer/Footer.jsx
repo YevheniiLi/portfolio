@@ -23,6 +23,10 @@ const Footer = () => {
         setIsClicked(false);
         setIsSent(true);
       }, 2250);
+
+      if(!formData.name || !formData.email || !formData.message){
+        alert ("Please fill in all fields");
+      }
   
       setTimeout(() => {
         setIsSubmitted(true);

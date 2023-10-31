@@ -4,51 +4,51 @@ import { MdWorkspacesOutline } from "react-icons/md";
 export const projectExperience = [
   {
     name: "Website Design",
-    projects: 76,
+    projects: 26,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
     name: "Web App Design",
-    projects: 63,
+    projects: 10,
     icon: CiMobile1,
     bg: "#EEC048",
   },
   {
     name: "Brand Identity",
-    projects: 47,
+    projects: 14,
     icon: MdWorkspacesOutline,
     bg: "#F26440",
   },
 ];
 
 export const WhatDoIHelp = [
-  "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-  "We use process design to create digital products. Besides that also help their business",
+  "I specialize in developing both frontend and backend applications, as well as websites and other digital solutions. My expertise allows me to create user-friendly and efficient digital products.",
+  "I use process design principles to design and develop digital solutions, helping businesses streamline their processes and achieve their goals. Whether it's a website, a web application, or a complex backend system, I can bring your ideas to life."
 ];
 
 export const workExp = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
+    place: "Aarhus, Middle Jutland, Denmark",
+    tenure: "Apr 2023 - Present · 7 mos",
+    role: "Front-end developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
+      "As a Frontend Development Intern at Lentii, I work with modern tools and programming practices, gaining experience in AngularJS, TypeScript, Bootstrap, Tailwind CSS, and Bitbucket. I collaborate with experienced developers, creating user-friendly interfaces and contributing to projects. This internship at Lentii is a valuable opportunity for my professional growth in frontend development."
+    },
   {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
+    place: "GoIT School· Full-time",
+    tenure: "Dec 2021 - Jan 2023 · 1 yr 2 mos",
+    role: "Full Stack Developer",
     detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+      "At GoIT, I contributed to cutting-edge projects as a Full Stack Developer, gaining expertise in React.js, JavaScript, HTML5, CSS, SASS, Redux, GitHub, Git, and REST API. GoIT's innovative and supportive environment provided significant professional growth in the IT industry.",
   },
-  {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  },
+  // {
+  //   place: "Global Solution",
+  //   tenure: "Aug 2014 - Sep 2016",
+  //   role: "Sr. Product Designer",
+  //   detail:
+  //     "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+  // },
 ];
 
 export const comments = [

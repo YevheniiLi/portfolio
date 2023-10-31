@@ -1,9 +1,10 @@
 import css from './Header.module.scss'
-import {BiMenuAltRight, BiPhoneCall} from 'react-icons/bi'
+import {BiMenuAltRight} from 'react-icons/bi'
 import {motion} from 'framer-motion';
 import { getMenuStyles, headerVariants } from '../../utils/motion';
 import { useState } from 'react';
 import useHeaderShadow from '../../hooks/useHeaderShadow';
+import {CgPhone} from 'react-icons/cg';
 
 const Header = () => {
 
@@ -34,7 +35,7 @@ style={{boxShadow: headerShadow}}
   <li><a href="#people">Reviews</a></li>
   <li className={`flexCenter ${css.phone}`}>
     <p>+34 (692) 14 22 47</p>
-    <BiPhoneCall size={"40px"} />
+    <CgPhone size={"40px"} />
   </li>
 </ul>
     {/* {for medium and small screens} */}

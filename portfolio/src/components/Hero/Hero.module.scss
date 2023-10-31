@@ -64,11 +64,11 @@ overflow: hidden;
         position: absolute;
         bottom: -3rem;
         margin: auto;
-        background-image: url('../splash.png');
+        // background-image: url('../splash.png');
         background-repeat: no-repeat;
         background-size: 28rem;
         background-position: bottom;
-        left: 33%;
+        left: 30%;
         
         img {
             @media (max-width: $sm ) {
@@ -87,7 +87,6 @@ overflow: hidden;
         top: 50%;
         left: 0;
         color: olivedrab;
-
     }
 
 

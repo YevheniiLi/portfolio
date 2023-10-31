@@ -18,7 +18,7 @@ const Hero = () => {
             variants={fadeIn("right", "tween", 0.2, 1)}
             className='primaryText'>
 
-                Welcome, <br /> Im Yevhenii.
+                Hey, <br /> im Yevhenii.
                 </motion.span>
                 <motion.span 
                 variants={fadeIn("left", "tween", 0.4, 1)}
@@ -33,7 +33,7 @@ const Hero = () => {
         className={css.person}>
             <motion.img
         variants={slideIn("up", "tween", 0.5, 1)}
-            src="./person.png" alt='' />
+            src="./person.jpeg" alt='' width='450' />
         </motion.div>
 
         {/* {email} */}

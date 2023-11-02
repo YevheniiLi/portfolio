@@ -26,7 +26,7 @@ className={css.wrapper}>
 
                     <div>
                         <span>{exp.name}</span>
-                        <span className='secondaryText'>{exp.projects} Projects</span>
+                        {/* <span className='secondaryText'>{exp.projects} Projects</span> */}
                     </div>
                 </motion.div>
             })
@@ -35,14 +35,14 @@ className={css.wrapper}>
         <motion.div 
         variants={textVariant(0.5)}
         className={css.rightSide}>
-        <span className='primaryText'>What i do I develop</span>
+        <span className='primaryText'>I Craft Digital Products</span>
         {
            WhatDoIHelp.map((paragraph, i) => {
             return <span className='secondaryText' key={i}>{paragraph}</span>
-           }) 
+           })
         }
 
-        <div className={`flexCenter ${css.stats}`}>
+        {/* <div className={`flexCenter ${css.stats}`}>
             <div className={`flexCenter  ${css.stat}`}>
                 <span className='primaryText'>20+</span>
                 <span className='secondaryText'>Project Completed</span>
@@ -51,7 +51,7 @@ className={css.wrapper}>
                 <span className='primaryText'>50+</span>
                 <span className='secondaryText'>Happy Clients</span>
                 </div>
-        </div>
+        </div> */}
 
         </motion.div>
     </div>

@@ -20,11 +20,9 @@ const Hero = () => {
 
                 Hey, <br /> im Yevhenii.
                 </motion.span>
-                <motion.span 
-                variants={fadeIn("left", "tween", 0.4, 1)}
-                className='secondaryText'>
-                    Coding Harmony                
-                    </motion.span>
+                <motion.img
+        variants={fadeIn("left", "tween", 0.4, 1)}
+            src="./splash.png" alt='' width='100' />
         </div>
 
 {/* {person image} */}
@@ -33,14 +31,13 @@ const Hero = () => {
         className={css.person}>
             <motion.img
         variants={slideIn("up", "tween", 0.5, 1)}
-            src="./person.jpeg" alt='' width='450' />
+            src="./person.jpeg" alt='' width='500' />
         </motion.div>
 
         {/* {email} */}
         <motion.a
         variants={fadeIn("right", "tween", 0.3, 1)}
-        className={css.email} href="mailto:jekilllimarenko@gmail.com">
-        jekilllimarenko@gmail.com
+        className={css.email} href="https://www.mediafire.com/file/nl22eeksmk2il8g/CV+YevheniiLi.pdf/file" download>Download my CV
         </motion.a>
 
 {/* {lower elements} */}

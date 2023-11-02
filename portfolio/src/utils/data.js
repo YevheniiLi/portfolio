@@ -1,25 +1,32 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { CiMobile1 } from "react-icons/ci";
-import { MdWorkspacesOutline } from "react-icons/md";
+// import { CiMobile1 } from "react-icons/ci";
+// import { MdWorkspacesOutline } from "react-icons/md";
+import { CiServer } from 'react-icons/ci'
 export const projectExperience = [
   {
-    name: "Website Design",
+    name: "Front-End Development",
     projects: 26,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Web App Design",
+    name: "Full-Stack Development",
     projects: 10,
-    icon: CiMobile1,
+    icon: CiServer,
     bg: "#EEC048",
   },
-  {
-    name: "Brand Identity",
-    projects: 14,
-    icon: MdWorkspacesOutline,
-    bg: "#F26440",
-  },
+  // {
+  //   name: "Technical Proficiency",
+  //   projects: 14,
+  //   icon: MdWorkspacesOutline,
+  //   bg: "#F26440",
+  // },
+  // {
+  //   name: "Competencies",
+  //   projects: 14,
+  //   icon: MdWorkspacesOutline,
+  //   bg: "#F26440",
+  // },
 ];
 
 export const WhatDoIHelp = [

@@ -4,12 +4,13 @@ import {motion} from 'framer-motion';
 import { getMenuStyles, headerVariants } from '../../utils/motion';
 import { useState } from 'react';
 import useHeaderShadow from '../../hooks/useHeaderShadow';
-import {CgPhone} from 'react-icons/cg';
+import {ImWhatsapp} from 'react-icons/im';
 
 const Header = () => {
 
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
+  
 
   return (
 <motion.div 
@@ -34,9 +35,9 @@ style={{boxShadow: headerShadow}}
   <li><a href="#portfolio">Portfolio</a></li>
   <li><a href="#people">Reviews</a></li>
   <li className={`flexCenter ${css.phone}`}>
-    <p>+34 (692) 14 22 47</p>
-    <CgPhone size={"40px"} />
-  </li>
+  <a href="tel:+34692142247">+34 (692) 14 22 47</a>
+  <ImWhatsapp size={"20px"} />
+</li>
 </ul>
     {/* {for medium and small screens} */}
     <div

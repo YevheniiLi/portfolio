@@ -2,6 +2,7 @@
 
 .wrapper {
 overflow: hidden;
+height: 100vh;
 
     .container {
     position: relative;
@@ -69,14 +70,20 @@ overflow: hidden;
         background-size: 28rem;
         background-position: bottom;
         left: 30%;
-        
+        .caption {
+            text-align: center; /* Выравнивание текста по центру */
+            margin-top: 150px; /* Подходящий верхний отступ для надписи */
+            font-size: 32px; 
+        }
         img {
             @media (max-width: $sm ) {
                 width: 23rem;
             }
-            margin-bottom: -5px;
+            margin-bottom: -150px;
         }
     }
+
+
 
     .email {
         @media (max-width: $sm) {

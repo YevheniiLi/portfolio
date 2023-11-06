@@ -30,9 +30,9 @@ style={{boxShadow: headerShadow}}
   style={getMenuStyles(menuOpened)}
   className={`flexCenter ${css.menu}`}
 >
-  <li><a href="#experties">Services</a></li>
+  <li><a href="#experties">About me</a></li>
   <li><a href="#work">Experience</a></li>
-  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#portfolio">Projects</a></li>
   <li><a href="#people">Reviews</a></li>
   <li className={`flexCenter ${css.phone}`}>
   <a href="tel:+34692142247">+34 (692) 14 22 47</a>

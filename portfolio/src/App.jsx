@@ -1,4 +1,4 @@
-import Experties from "./components/Experties/Experties";
+import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -11,7 +11,7 @@ const App = () => {
   return <div className={`bg-primary ${css.container}`}>
     <Header /> 
     <Hero />
-    <Experties />
+    <About />
     <Work />
     <Portfolio />
     <People />

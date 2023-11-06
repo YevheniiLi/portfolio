@@ -30,14 +30,13 @@ export const projectExperience = [
 ];
 
 export const WhatDoIHelp = [
-  "I specialize in developing both frontend and backend applications, as well as websites and other digital solutions. My expertise allows me to create user-friendly and efficient digital products.",
-  "I use process design principles to design and develop digital solutions, helping businesses streamline their processes and achieve their goals. Whether it's a website, a web application, or a complex backend system, I can bring your ideas to life."
+  "Hello, I'm Yevhenii. Originally from Ukraine and currently residing in Girona, near Barcelona, Spain. I'm a passionate web developer with a strong focus on front-end and full-stack development. I'm dedicated to exploring new technologies and have a keen interest in the field of artificial intelligence. In addition to my tech interests, I'm an avid traveler who has had the opportunity to visit many countries, including Germany, Switzerland, China, Turkey, and Hong Kong. My travels have enriched my experience and fueled my curiosity, which I bring to my work in web development.I have two years of experience in web development and am committed to staying up-to-date with industry trends. I'm actively seeking opportunities to work on exciting projects with a dynamic team. Thank you for considering me for this opportunity."
 ];
 
 export const workExp = [
   {
     place: "Aarhus, Middle Jutland, Denmark",
-    tenure: "Apr 2023 - Present · 7 mos",
+    tenure: "Apr 2023 - Present · 8 mos",
     role: "Front-end developer",
     detail:
       "As a Frontend Development Intern at Lentii, I work with modern tools and programming practices, gaining experience in AngularJS, TypeScript, Bootstrap, Tailwind CSS, and Bitbucket. I collaborate with experienced developers, creating user-friendly interfaces and contributing to projects. This internship at Lentii is a valuable opportunity for my professional growth in frontend development."

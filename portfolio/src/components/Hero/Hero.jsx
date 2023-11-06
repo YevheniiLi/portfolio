@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import css from './Hero.module.scss'
 import { motion } from "framer-motion"
 import { fadeIn, slideIn, staggerContainer } from '../../utils/motion'
@@ -18,7 +19,7 @@ const Hero = () => {
             variants={fadeIn("right", "tween", 0.2, 1)}
             className='primaryText'>
 
-                Hey, <br /> im Yevhenii.
+                Greetings, <br /> I'm  Yevhenii.
                 </motion.span>
                 <motion.img
         variants={fadeIn("left", "tween", 0.4, 1)}
@@ -32,7 +33,7 @@ const Hero = () => {
             <motion.img
         variants={slideIn("up", "tween", 0.5, 1)}
             src="./person.jpeg" alt='' width='500' />
-              <div className={css.caption}>FULL STACK ENGINEER
+              <div className={css.caption}>FULL STACK ENGINEER 
 </div>
         </motion.div>
 

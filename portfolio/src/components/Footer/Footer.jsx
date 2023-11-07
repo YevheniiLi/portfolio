@@ -6,6 +6,8 @@ import { BsWhatsapp } from 'react-icons/bs';
 const Footer = () => {
   return (
     <div className={css.wrapper}>
+          <a className="anchor" id="contacts"></a>
+
       <div className={`yPaddings innerWidth ${css.container}`}>
         <div className={`flexCenter ${css.heading}`}>
           <h5 className="primaryText">Contact me</h5>

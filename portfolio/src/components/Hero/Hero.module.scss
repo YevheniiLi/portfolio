@@ -1,123 +1,108 @@
-@import '../../styles/contants.scss';
+@import "../../styles/contants.scss";
 
 .wrapper {
-overflow: hidden;
-height: 100vh;
+  overflow: hidden;
+  height: 100vh;
 
-    .container {
+  .container {
     position: relative;
     z-index: 1;
-    
+
     .upperElements {
-        @media (max-width : $sm) {
-            justify-content: center;
-            text-align: center;
-            gap: 2rem;
-        }
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
+      @media (max-width: $sm) {
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     .lowerElements {
-        @media (max-width: $sm), (max-width: $md) {
-            margin-top: 4rem;
-            gap: 2rem;
-            justify-content: center;
-        }
-        margin-top: 12rem;
+      @media (max-width: $sm), (max-width: $md) {
+        margin-top: 4rem;
+        gap: 2rem;
+        justify-content: center;
+      }
+      margin-top: 12rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .social {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .experience {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            position: relative;
-            top: 150px;
-            >:nth-child(2) {
-                line-height: 25px;
-            }
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        top: 170px;
+        right: 10px;
+        > :nth-child(2) {
+          line-height: 25px;
         }
+      }
 
-        .cerificate {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            top: 125px;
+      .cerificate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 140px;
+        left: 40px;
+        font-size: 12px;
 
-            img {
-                margin-bottom: 1rem;
-                width: 3.5rem;
-            }
+        img {
+          margin-bottom: 1rem;
+          width: 3.5rem;
         }
+      }
     }
 
     .person {
-        @media (max-width: $sm), (max-width: $md) {
-            position: relative;
-            bottom: 3rem;
-            left: 0;
-            background-size: 20rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-position: bottom;
-        }
-        position: absolute;
-        bottom: -10rem;
-        margin: auto;
-        // background-image: url('../splash.png');
-        background-repeat: no-repeat;
-        background-size: 28rem;
+      @media (max-width: $sm), (max-width: $md) {
+        position: relative;
+        bottom: 3rem;
+        left: 0;
+        background-size: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-position: bottom;
-        left: 30%;
-        .caption {
-            font-family: 'Agbalumo', sans-serif;
-            text-align: center;
-            margin-top: 150px;
-            font-size: 40px;
-            position: relative;
-            top: -50px;
+      }
+      position: absolute;
+      bottom: -10rem;
+      margin: auto;
+      background-repeat: no-repeat;
+      background-size: 28rem;
+      background-position: bottom;
+      left: 30%;
+      .caption {
+        font-family: "Agbalumo", sans-serif;
+        text-align: center;
+        margin-top: 150px;
+        font-size: 40px;
+        position: relative;
+        top: -50px;
+      }
+      img {
+        @media (max-width: $sm) {
+          width: 23rem;
         }
-        img {
-            @media (max-width: $sm ) {
-                width: 23rem;
-            }
-            margin-bottom: -50px;
-            border-radius: 80px;
-        }
+        margin-bottom: -70px;
+        border-radius: 80px;
+      }
     }
-
-
 
     .email {
-        @media (max-width: $sm) {
-            position: relative;
-            display: none;
-        }
-        position: absolute;
-        top: 50%;
-        left: 0;
-        color: olivedrab;
-        text-decoration: none;
+      @media (max-width: $sm) {
+        position: relative;
+        display: none;
+      }
+      position: absolute;
+      top: 50%;
+      right: 0;
+      color: olivedrab;
+      text-decoration: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
+  }
 }

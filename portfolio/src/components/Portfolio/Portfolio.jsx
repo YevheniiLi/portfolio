@@ -20,8 +20,10 @@ className={`paddings ${css.wrapper}`}>
             <span className='primaryText'>My Latest Work</span>
             <p style={{marginTop: "10px"}}>Perfect solution for digital experience</p>
         </div>
-        <a href="https://github.com/YevheniiLi?tab=repositories" className="secondaryText">Explore More Works</a>
-        </motion.div> 
+             <motion.img
+        variants={fadeIn("left", "tween", 0.4, 1)}
+            src="./github.png" alt='' width='100' />   
+              </motion.div> 
 
         {/* {images} */}
         <div className={`flexCenter ${css.showCase}`}>

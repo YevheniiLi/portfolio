@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import css from "./People.module.scss";
 import { motion } from "framer-motion";
 import { footerVariants, staggerContainer } from "../../utils/motion";
@@ -22,9 +23,8 @@ const People = () => {
         <div className={`flexCenter ${css.heading}`}>
           <span className="primaryText">People talk about me</span>
           <p style={{ marginTop: "2rem" }}>
-            I got a job that was in accordance with the salary and field of work
-          </p>
-          <p>The process of submiting an application was quite cosy</p>
+          People I've worked with have said some nice things...
+            </p>
         </div>
 
         {/* {carousel slider} */}

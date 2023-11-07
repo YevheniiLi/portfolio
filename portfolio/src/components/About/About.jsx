@@ -16,11 +16,21 @@ const About = () => {
       <div
         className={`paddings yPaddings flexCenter innerWidth ${css.container}`}
       >
-             <motion.div variants={textVariant(0.5)} className={css.rightSide} style={{ textAlign: 'justify' }}>
-          <span className="primaryText" style={{ fontSize: "25px"}} >About me</span>
+        <motion.div
+          variants={textVariant(0.5)}
+          className={css.rightSide}
+          style={{ textAlign: "justify" }}
+        >
+          <span className="primaryText" style={{ fontSize: "25px" }}>
+            About me
+          </span>
           {WhatDoIHelp.map((paragraph, i) => {
             return (
-              <span className="secondaryText" style={{ fontSize: "15px"}} key={i}>
+              <span
+                className="secondaryText"
+                style={{ fontSize: "15px" }}
+                key={i}
+              >
                 {paragraph}
               </span>
             );
@@ -32,14 +42,14 @@ const About = () => {
             className="primaryText"
           ></motion.span>
           <motion.img
+            className="about-image"
             variants={fadeIn("left", "tween", 0.4, 1)}
             src="./about.jpeg"
             alt=""
             width="500"
-            style={{ borderRadius: "5%", transform: "scaleX(-1)"}}
-            />
+            style={{ borderRadius: "5%", transform: "scaleX(-1)" }}
+          />
         </div>
-   
       </div>
     </motion.section>
   );

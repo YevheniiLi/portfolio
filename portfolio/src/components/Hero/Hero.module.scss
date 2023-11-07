@@ -31,6 +31,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
       .social {
+        @media (max-width: $sm), (max-width: $md) {
+          top: 550px;
+          right: 0px;
+        }
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -43,6 +47,11 @@
       }
 
       .cerificate {
+        @media (max-width: $sm), (max-width: $md) {
+          top: 350px;
+          left: 10px;
+          display: none;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -60,11 +69,11 @@
 
     .person {
       @media (max-width: $sm), (max-width: $md) {
-        position: relative;
-        bottom: 3rem;
+        position: absolute;
+        top: 6rem;
         left: 0;
         background-size: 20rem;
-        display: flex;
+        // display: flex;
         align-items: center;
         justify-content: center;
         background-position: bottom;
@@ -86,7 +95,7 @@
       }
       img {
         @media (max-width: $sm) {
-          width: 23rem;
+          width: 25rem;
         }
         margin-bottom: -70px;
         border-radius: 80px;

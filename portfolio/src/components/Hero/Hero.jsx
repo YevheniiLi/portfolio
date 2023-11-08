@@ -29,12 +29,13 @@ const Hero = () => {
                <motion.a
   variants={fadeIn("right", "tween", 0.3, 1)}
   className={css.email}
-  href="https://www.mediafire.com/file/nl22eeksmk2il8g/CV+YevheniiLi.pdf/file"
+  href="https://drive.google.com/uc?export=download&id=18YoAw962WatK2moG4QQr7CeGAJySSPGu"
   download
 >
-  {/* <span>Download my CV</span> */}
-  <img src="./cv.png" alt="Download" width='90' />
+    <img src="./cv.png" alt="Download" width='90' />
 </motion.a>
+
+
 
         </div>
 
@@ -66,24 +67,11 @@ const Hero = () => {
           >
             <div className="primaryText"></div>
             <div className="secondaryText">
-              <a href="https://t.me/eyeije" target="blank">
-                <img
-                  src="./telegram.png"
-                  alt="Telegram"
-                  width="30"
-                  style={{ marginRight: "15px" }}
-                />
-              </a>
-              <a href="tel:+34692142247" target="blank">
-                <img
-                  src="./whatsapp.png"
-                  alt="WhatsApp"
-                  width="30"
-                  style={{ marginRight: "15px" }}
-                />
-              </a>
               <a href="https://www.linkedin.com/in/lymarenko/" target="blank">
-                <img src="./linkedin.png" alt="LinkedIn" width="30" />
+                <img src="./linkedin.png" alt="LinkedIn" width="50"  style={{ marginRight: "15px" }} />
+              </a>
+              <a href="https://github.com/YevheniiLi" target="blank">
+                <img src="./github.png" alt="LinkedIn" width="50" />
               </a>
             </div>
           </motion.div>

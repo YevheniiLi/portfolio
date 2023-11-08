@@ -1,13 +1,66 @@
 import css from "./Footer.module.scss";
-import { MdOutlineEmail } from 'react-icons/md';
-import { RiMessengerLine } from 'react-icons/ri';
-import { BsWhatsapp } from 'react-icons/bs';
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons"; // Import the checkmark icon
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_oybnjpq",
+        "template_ogmc7h9",
+        form.current,
+        "4g6wne_TfkxwNmITn"
+      )
+    e.target.reset()
+  };
+
+  const [isClicked, setIsClicked] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+      setIsSent(true);
+    }, 2250);
+
+    setTimeout(() => {
+      setIsSubmitted(true);
+      setIsSent(false);
+      setIsSubmitted(false);
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }, 2000);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <div className={css.wrapper}>
-          <a className="anchor" id="contacts"></a>
-
+      <a className="anchor" id="contacts"></a>
       <div className={`yPaddings innerWidth ${css.container}`}>
         <div className={`flexCenter ${css.heading}`}>
           <h5 className="primaryText">Contact me</h5>
@@ -15,24 +68,68 @@ const Footer = () => {
         <div className={`flexCenter ${css.group}`}>
           <div className={css.contact}>
             <article className={css.social}>
-              <MdOutlineEmail style={{ color: 'red' }} />
-              <h4>Email</h4>
-              <h5>jekilllimarenko@gmail.com</h5>
-              <a href="mailto:jekilllimarenko@gmail.com">Contact via Email</a>
+              <a href="mailto:jekilllimarenko@gmail.com" target="blank">
+                <img src="./gmail.png" alt="Email" width="30" />
+              </a>
+              <h4>Gmail</h4>
+              <a href="mailto:jekilllimarenko@gmail.com" target="blank">
+                Contact via Gmail
+              </a>
             </article>
             <article className={css.social}>
-              <RiMessengerLine style={{ color: 'violet' }} />
-              <h4>Messanger</h4>
-              <h5>Yevhenii Lymarenko</h5>
-              <a href="https://m.me/eugenelimarenko">Message on Messenger</a>
+              <a href="https://t.me/eyeije" target="blank">
+                <img src="./telegram.png" alt="Telegram" width="30" />
+              </a>
+              <h4>Telegram</h4>
+              <a href="https://t.me/eyeije" target="blank">
+                Write me on Telegram
+              </a>
             </article>
             <article className={css.social}>
-              <BsWhatsapp style={{ color: '#25D366' }} />
+              <a href="tel:+34692142247" target="blank">
+                <img src="./whatsapp.png" alt="WhatsApp" width="30" />
+              </a>
               <h4>WhatsApp</h4>
-              <h5>+34 692 14 22 47</h5>
-              <a href="https://api.whatsapp.com/send?phone=+34692142247">Chat on WhatsApp</a>
+              <a href="tel:+34692142247" target="blank">
+                Call on WhatsApp
+              </a>
             </article>
           </div>
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+              value={formData.name}
+              onChange={handleInputChange}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              value={formData.email}
+              onChange={handleInputChange}
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Your Message"
+              required
+              value={formData.message}
+              onChange={handleInputChange}
+            />
+            <button
+              type="submit"
+              className={`${css.button} ${isClicked ? css.onclic : ""} ${
+                isSubmitted ? css.validate : ""
+              }`}
+              onClick={handleClick}
+            >
+              {isSent ? <FontAwesomeIcon icon={faCheck} /> : "SUBMIT"}
+            </button>
+          </form>
         </div>
       </div>
     </div>

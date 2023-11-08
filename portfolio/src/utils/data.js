@@ -69,7 +69,7 @@ export const comments = [
     name: "Obinna Okoma",
     post: "UI/UX Designer",
     comment:
-      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field. I have no doubt that he will continue to thrive and make remarkable contributions to any future projects or teams he become a part of.",
+      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field.",
     img: "./obianna.png",
   },
   {
@@ -90,7 +90,7 @@ export const comments = [
     name: "Obinna Okoma",
     post: "UI/UX Designer",
     comment:
-      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field. I have no doubt that he will continue to thrive and make remarkable contributions to any future projects or teams he become a part of.",
+      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field.",
       img: "./obianna.png",
     },
   {
@@ -111,7 +111,7 @@ export const comments = [
     name: "Obinna Okoma",
     post: "UI/UX Designer",
     comment:
-      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field. I have no doubt that he will continue to thrive and make remarkable contributions to any future projects or teams he become a part of.",
+      "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field.",
       img: "./obianna.png",
   },
   {

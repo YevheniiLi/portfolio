@@ -19,10 +19,7 @@ className={`paddings ${css.wrapper}`}>
         <div>
             <span className='primaryText'>My Latest Work</span>
             <p style={{marginTop: "10px"}}>Perfect solution for digital experience</p>
-        </div>
-             <motion.img
-        variants={fadeIn("left", "tween", 0.4, 1)}
-            src="./github.png" alt='' width='100' />   
+        </div>  
               </motion.div> 
 
         {/* {images} */}

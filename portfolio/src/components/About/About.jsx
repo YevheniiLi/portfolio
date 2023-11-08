@@ -18,7 +18,7 @@ const About = () => {
       >
         <motion.div
           variants={textVariant(0.5)}
-          className={css.rightSide}
+          className={css.leftSide}
           style={{ textAlign: "justify" }}
         >
           <span className="primaryText" style={{ fontSize: "25px" }}>
@@ -36,7 +36,7 @@ const About = () => {
             );
           })}
         </motion.div>
-        <div className={css.leftSide}>
+        <div className={css.rightSide}>
           <motion.span
             variants={fadeIn("right", "tween", 0.2, 1)}
             className="primaryText"
@@ -46,8 +46,7 @@ const About = () => {
             variants={fadeIn("left", "tween", 0.4, 1)}
             src="./about.jpeg"
             alt=""
-            width="500"
-            style={{ borderRadius: "5%", transform: "scaleX(-1)" }}
+            style={{ borderRadius: "5%", transform: "scaleX(-1)"}}
           />
         </div>
       </div>

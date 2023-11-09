@@ -21,22 +21,16 @@ const Hero = () => {
           >
             Greetings, <br /> I'm Yevhenii.
           </motion.span>
-          {/* <motion.img
-        variants={fadeIn("left", "tween", 0.4, 1)}
-            src="./splash.png" alt='' width='100' /> */}
 
-               {/* {cv} */}
-               <motion.a
-  variants={fadeIn("right", "tween", 0.3, 1)}
-  className={css.email}
-  href="https://drive.google.com/uc?export=download&id=18YoAw962WatK2moG4QQr7CeGAJySSPGu"
-  download
->
-    <img src="./cv.png" alt="Download" width='90' />
-</motion.a>
-
-
-
+          {/* {cv} */}
+          <motion.a
+            variants={fadeIn("right", "tween", 0.3, 1)}
+            className={css.email}
+            href="https://drive.google.com/uc?export=download&id=18YoAw962WatK2moG4QQr7CeGAJySSPGu"
+            download
+          >
+            <img src="./cv.png" alt="Download" width="90" />
+          </motion.a>
         </div>
 
         {/* {person image} */}
@@ -53,12 +47,6 @@ const Hero = () => {
           <div className={css.caption}>FRONT-END DEVELOPER</div>
         </motion.div>
 
-        {/* {email} */}
-        {/* <motion.a
-        variants={fadeIn("right", "tween", 0.3, 1)}
-        className={css.email} href="https://www.mediafire.com/file/nl22eeksmk2il8g/CV+YevheniiLi.pdf/file" download>Download my CV
-        </motion.a> */}
-
         {/* {lower elements} */}
         <div className={css.lowerElements}>
           <motion.div
@@ -68,7 +56,12 @@ const Hero = () => {
             <div className="primaryText"></div>
             <div className="secondaryText">
               <a href="https://www.linkedin.com/in/lymarenko/" target="blank">
-                <img src="./linkedin.png" alt="LinkedIn" width="50"  style={{ marginRight: "15px" }} />
+                <img
+                  src="./linkedin.png"
+                  alt="LinkedIn"
+                  width="50"
+                  style={{ marginRight: "15px" }}
+                />
               </a>
               <a href="https://github.com/YevheniiLi" target="blank">
                 <img src="./github.png" alt="LinkedIn" width="50" />

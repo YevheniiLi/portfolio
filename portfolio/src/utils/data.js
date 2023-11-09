@@ -1,6 +1,4 @@
 import { HiOutlineDesktopComputer } from "react-icons/hi";
-// import { CiMobile1 } from "react-icons/ci";
-// import { MdWorkspacesOutline } from "react-icons/md";
 import { CiServer } from 'react-icons/ci'
 export const projectExperience = [
   {
@@ -15,18 +13,7 @@ export const projectExperience = [
     icon: CiServer,
     bg: "#EEC048",
   },
-  // {
-  //   name: "Technical Proficiency",
-  //   projects: 14,
-  //   icon: MdWorkspacesOutline,
-  //   bg: "#F26440",
-  // },
-  // {
-  //   name: "Competencies",
-  //   projects: 14,
-  //   icon: MdWorkspacesOutline,
-  //   bg: "#F26440",
-  // },
+ 
 ];
 
 export const WhatDoIHelp = [
@@ -48,13 +35,6 @@ export const workExp = [
     detail:
       "At GoIT, I contributed to cutting-edge projects as a Full Stack Developer, gaining expertise in React.js, JavaScript, HTML5, CSS, SASS, Redux, GitHub, Git, and REST API. GoIT's innovative and supportive environment provided significant professional growth in the IT industry.",
   },
-  // {
-  //   place: "Global Solution",
-  //   tenure: "Aug 2014 - Sep 2016",
-  //   role: "Sr. Product Designer",
-  //   detail:
-  //     "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
-  // },
 ];
 
 export const comments = [

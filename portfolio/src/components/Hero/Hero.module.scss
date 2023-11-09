@@ -1,8 +1,14 @@
 @import "../../styles/contants.scss";
 
 .wrapper {
+  @media (max-width: $md) {
+    height: min(100vh, 900px);
+  }
+
+  @media (min-width: $xl) {
+    height: 100vh;
+  }
   overflow: hidden;
-  height: 100vh;
 
   .container {
     position: relative;
@@ -14,6 +20,7 @@
         text-align: center;
         gap: 2rem;
       }
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -35,6 +42,9 @@
           top: 550px;
           right: 5px;
         }
+        @media (min-width: $md) and (max-width: $lg) {
+          top: -50px;
+        }
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -48,10 +58,13 @@
 
       .cerificate {
         @media (max-width: $sm), (max-width: $md) {
-          top: 350px;
+          top: 520px;
           left: 10px;
-          display: none;
         }
+        @media (min-width: $md) and (max-width: $lg) {
+          top: 20px;
+        }
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,6 +91,9 @@
         justify-content: center;
         background-position: bottom;
       }
+      @media (min-width: $md) and (max-width: $lg) {
+        left: 25%;
+      }
       position: absolute;
       bottom: -10rem;
       margin: auto;
@@ -85,6 +101,9 @@
       background-size: 28rem;
       background-position: bottom;
       left: 30%;
+      @media (min-width: $md) {
+        bottom: -11rem;
+      }
       .caption {
         font-family: "Agbalumo", sans-serif;
         text-align: center;
@@ -101,11 +120,15 @@
         border-radius: 80px;
       }
     }
+    
 
     .email {
       @media (max-width: $sm) {
         position: relative;
         display: none;
+      }
+      @media (min-width: $md) and (max-width: $lg) {
+        top: 20%;
       }
       position: absolute;
       top: 50%;

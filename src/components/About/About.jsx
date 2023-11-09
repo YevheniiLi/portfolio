@@ -44,7 +44,7 @@ const About = () => {
           <motion.img
             className="about-image"
             variants={fadeIn("left", "tween", 0.4, 1)}
-            src="./about.jpeg"
+            src="./images/about.jpeg"
             alt=""
             style={{ borderRadius: "5%", transform: "scaleX(-1)"}}
           />

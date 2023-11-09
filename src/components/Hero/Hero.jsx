@@ -29,7 +29,7 @@ const Hero = () => {
             href="https://drive.google.com/uc?export=download&id=18YoAw962WatK2moG4QQr7CeGAJySSPGu"
             download
           >
-            <img src="./cv.png" alt="Download" width="90" />
+            <img src="./images/cv.png" alt="Download" width="90" />
           </motion.a>
         </div>
 
@@ -40,7 +40,7 @@ const Hero = () => {
         >
           <motion.img
             variants={slideIn("up", "tween", 0.5, 1)}
-            src="./person.jpeg"
+            src="./images/person.jpeg"
             alt=""
             width="500"
           />
@@ -57,14 +57,14 @@ const Hero = () => {
             <div className="secondaryText">
               <a href="https://www.linkedin.com/in/lymarenko/" target="blank">
                 <img
-                  src="./linkedin.png"
+                  src="./images/linkedin.png"
                   alt="LinkedIn"
                   width="50"
                   style={{ marginRight: "15px" }}
                 />
               </a>
               <a href="https://github.com/YevheniiLi" target="blank">
-                <img src="./github.png" alt="LinkedIn" width="50" />
+                <img src="./images/github.png" alt="LinkedIn" width="50" />
               </a>
             </div>
           </motion.div>
@@ -72,7 +72,7 @@ const Hero = () => {
             variants={fadeIn("left", "tween", 0.5, 1)}
             className={css.cerificate}
           >
-            <img src="./certificate.png" alt="" />
+            <img src="./images/certificate.png" alt="" />
             <span style={{ marginBottom: "5px" }}>MATERIALS ENGINEER</span>
             <span>CERTIFIED FULL STACK ENGINEER</span>
           </motion.div>

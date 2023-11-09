@@ -69,7 +69,7 @@ const Footer = () => {
           <div className={css.contact}>
             <article className={css.social}>
               <a href="mailto:jekilllimarenko@gmail.com" target="blank">
-                <img src="./gmail.png" alt="Email" width="30" />
+                <img src="./images/gmail.png" alt="Email" width="30" />
               </a>
               <h4>Gmail</h4>
               <a href="mailto:jekilllimarenko@gmail.com" target="blank">
@@ -78,7 +78,7 @@ const Footer = () => {
             </article>
             <article className={css.social}>
               <a href="https://t.me/eyeije" target="blank">
-                <img src="./telegram.png" alt="Telegram" width="30" />
+                <img src="./images/telegram.png" alt="Telegram" width="30" />
               </a>
               <h4>Telegram</h4>
               <a href="https://t.me/eyeije" target="blank">
@@ -87,7 +87,7 @@ const Footer = () => {
             </article>
             <article className={css.social}>
               <a href="tel:+34692142247" target="blank">
-                <img src="./whatsapp.png" alt="WhatsApp" width="30" />
+                <img src="./images/whatsapp.png" alt="WhatsApp" width="30" />
               </a>
               <h4>WhatsApp</h4>
               <a href="tel:+34692142247" target="blank">

@@ -21,14 +21,14 @@ const About = () => {
           className={css.leftSide}
           style={{ textAlign: "justify" }}
         >
-          <span className="primaryText" style={{ fontSize: "25px" }}>
+          <span className="primaryText" style={{ fontSize: "25px", position:'relative', left:'10px' }}>
             About me
           </span>
           {WhatDoIHelp.map((paragraph, i) => {
             return (
               <span
                 className="secondaryText"
-                style={{ fontSize: "15px" }}
+                style={{ fontSize: "15px", position:'relative', left:'10px' }}
                 key={i}
               >
                 {paragraph}

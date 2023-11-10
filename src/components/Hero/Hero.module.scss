@@ -13,7 +13,7 @@
   .container {
     position: relative;
     z-index: 1;
-
+    max-width: 100%;
     .upperElements {
       @media (max-width: $sm) {
         justify-content: center;
@@ -120,7 +120,6 @@
         border-radius: 80px;
       }
     }
-    
 
     .email {
       @media (max-width: $sm) {

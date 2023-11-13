@@ -131,6 +131,7 @@
         }
         @media (min-width: $xl) {
           margin-top: 150px;
+          top: -50px;
 
          }
 
@@ -138,20 +139,29 @@
         text-align: center;
         font-size: 40px;
         position: relative;
-        top: -50px;
+        top: 100px;
       }
       img {
         @media (max-width: $sm) {
-          width: 25rem;
+          width: 24rem;
+          border-radius: 50%;
+          box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75); // Добавлено свойство box-shadow
         }
         @media (min-width: 375px) and (max-width: 390px) {
           border-radius: 0px;
           width: 24rem;
           position: relative;
           right: 22px;
+          border-radius: 50%;
+          box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75); // Добавлено свойство box-shadow
+        }
+        @media (min-width: $md) and (max-width: $lg) {
+          margin-bottom: 100px;
+
         }
         margin-bottom: -70px;
-        border-radius: 80px;
+        border-radius: 50%;
+        box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75); // Добавлено свойство box-shadow
       }
     }
 

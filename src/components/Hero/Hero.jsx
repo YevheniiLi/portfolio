@@ -44,7 +44,7 @@ const Hero = () => {
             src="./images/person.jpeg"
             alt=""
             width="500"
-            style={{ borderRadius: "5%", transform: "scaleX(-1) translateZ(0)" }}
+            style={{ transform: "scaleX(-1) translateZ(0)" }}
           />
           <div className={css.caption}>FRONT-END DEVELOPER</div>
         </motion.div>

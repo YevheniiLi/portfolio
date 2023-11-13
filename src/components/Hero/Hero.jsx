@@ -37,12 +37,14 @@ const Hero = () => {
         <motion.div
           variants={fadeIn("up", "tween", 0.3, 1)}
           className={css.person}
+          style={{ transform: "translateZ(0)" }}
         >
           <motion.img
             variants={slideIn("up", "tween", 0.5, 1)}
             src="./images/person.jpeg"
             alt=""
             width="500"
+            style={{ borderRadius: "5%", transform: "scaleX(-1) translateZ(0)" }}
           />
           <div className={css.caption}>FRONT-END DEVELOPER</div>
         </motion.div>

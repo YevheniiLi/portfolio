@@ -2,11 +2,14 @@
 
 .wrapper {
   @media (max-width: $md) {
-    height: min(100vh, 900px);
+    height: min(100vh, 850px);
+  }
+  @media (min-width: 375px) and (max-width: 390px) {
+    height: min(100vh, 720px);
   }
 
   @media (min-width: $xl) {
-    height: 100vh;
+    height: min(100vh, 720px);
   }
   overflow: hidden;
 
@@ -27,6 +30,7 @@
       flex-wrap: wrap;
     }
 
+    // social links //
     .lowerElements {
       @media (max-width: $sm), (max-width: $md) {
         margin-top: 4rem;
@@ -38,6 +42,9 @@
       flex-wrap: wrap;
       justify-content: space-between;
       .social {
+        @media (min-width: 375px) and (max-width: 390px) {
+          top: 450px !important;
+        }
         @media (max-width: $sm), (max-width: $md) {
           top: 550px;
           right: 5px;
@@ -56,7 +63,11 @@
         }
       }
 
+      // certificate //
       .cerificate {
+        @media (min-width: 375px) and (max-width: 390px) {
+          display: none;
+        }
         @media (max-width: $sm), (max-width: $md) {
           top: 520px;
           left: 10px;
@@ -80,19 +91,25 @@
       }
     }
 
+    // image person //
     .person {
       @media (max-width: $sm), (max-width: $md) {
         position: absolute;
         top: 6rem;
         left: 0;
         background-size: 20rem;
-        // display: flex;
         align-items: center;
         justify-content: center;
         background-position: bottom;
       }
       @media (min-width: $md) and (max-width: $lg) {
         left: 25%;
+      }
+
+      @media (min-width: 375px) and (max-width: 390px) {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
       }
       position: absolute;
       bottom: -10rem;
@@ -104,7 +121,14 @@
       @media (min-width: $md) {
         bottom: -11rem;
       }
+      // title //
       .caption {
+        @media (min-width: 375px) and (max-width: 390px) {
+          font-size: 30px;
+          top: -68px;
+          display: flex;
+          justify-content: center;
+        }
         font-family: "Agbalumo", sans-serif;
         text-align: center;
         margin-top: 150px;
@@ -116,11 +140,18 @@
         @media (max-width: $sm) {
           width: 25rem;
         }
+        @media (min-width: 375px) and (max-width: 390px) {
+          border-radius: 0px;
+          width: 24rem;
+          position: relative;
+          right: 22px;
+        }
         margin-bottom: -70px;
         border-radius: 80px;
       }
     }
 
+    // cv //
     .email {
       @media (max-width: $sm) {
         position: relative;

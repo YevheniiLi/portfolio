@@ -21,14 +21,17 @@ const About = () => {
           className={css.leftSide}
           style={{ textAlign: "justify" }}
         >
-          <span className="primaryText" style={{ fontSize: "25px", position:'relative', left:'10px' }}>
+          <span
+            className="primaryText"
+            style={{ fontSize: "25px", position: "relative", left: "10px" }}
+          >
             About me
           </span>
           {WhatDoIHelp.map((paragraph, i) => {
             return (
               <span
                 className="secondaryText"
-                style={{ fontSize: "15px", position:'relative', left:'10px' }}
+                style={{ fontSize: "15px", position: "relative", left: "10px" }}
                 key={i}
               >
                 {paragraph}
@@ -41,13 +44,16 @@ const About = () => {
             variants={fadeIn("right", "tween", 0.2, 1)}
             className="primaryText"
           ></motion.span>
-    <motion.img
-  className="about-image"
-  variants={fadeIn("left", "tween", 0.4, 1)}
-  src="./images/about.jpeg"
-  alt=""
-  style={{ borderRadius: "5%", transform: "scaleX(-1) translateZ(0)" }}
-/>
+          <motion.img
+            className="about-image"
+            variants={fadeIn("left", "tween", 0.4, 1)}
+            src="./images/about.jpeg"
+            alt=""
+            style={{
+              borderRadius: "5%",
+              transform: "scaleX(-1) translateZ(0)",
+            }}
+          />
         </div>
       </div>
     </motion.section>

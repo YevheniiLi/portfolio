@@ -129,9 +129,13 @@
           display: flex;
           justify-content: center;
         }
+        @media (min-width: $xl) {
+          margin-top: 150px;
+
+         }
+
         font-family: "Agbalumo", sans-serif;
         text-align: center;
-        // margin-top: 150px;
         font-size: 40px;
         position: relative;
         top: -50px;

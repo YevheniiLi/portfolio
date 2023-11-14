@@ -14,7 +14,6 @@ const People = () => {
       viewport={{ once: false, amount: 0.25 }}
       className={`paddings ${css.wrapper}`}
     >
-
       <a className="anchor" id="people"></a>
       <motion.div
         variants={footerVariants}
@@ -23,8 +22,8 @@ const People = () => {
         <div className={`flexCenter ${css.heading}`}>
           <span className="primaryText">People talk about me</span>
           <p style={{ marginTop: "2rem" }}>
-          People I've worked with have said some nice things...
-            </p>
+            People I've worked with have said some nice things...
+          </p>
         </div>
 
         {/* {carousel slider} */}

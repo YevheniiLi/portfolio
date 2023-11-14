@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     @media (min-width: $md) {
       gap: 4rem;
-          }
+    }
     > div {
       flex: 1;
     }
@@ -27,8 +27,8 @@
 
     .rightSide {
       @media (min-width: 375px) and (max-width: 390px) {
-        width: 350px!important;
-        }
+        width: 350px !important;
+      }
       @media (max-width: $sm), (max-width: $md) {
         width: 400px;
         display: flex;

@@ -11,14 +11,13 @@ const Footer = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_oybnjpq",
-        "template_ogmc7h9",
-        form.current,
-        "4g6wne_TfkxwNmITn"
-      )
-    e.target.reset()
+    emailjs.sendForm(
+      "service_oybnjpq",
+      "template_ogmc7h9",
+      form.current,
+      "4g6wne_TfkxwNmITn"
+    );
+    e.target.reset();
   };
 
   const [isClicked, setIsClicked] = useState(false);

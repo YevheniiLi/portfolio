@@ -23,7 +23,7 @@ export const WhatDoIHelp = [
 export const workExp = [
   {
     place: "Aarhus, Middle Jutland, Denmark",
-    tenure: "Apr 2023 - Present · 8 mos",
+    tenure: "Apr 2023 - Present · 9 mos",
     role: "Front-end developer",
     detail:
       "As a Frontend Development Intern at Lentii, I work with modern tools and programming practices, gaining experience in AngularJS, TypeScript, Bootstrap, Tailwind CSS, and Bitbucket. I collaborate with experienced developers, creating user-friendly interfaces and contributing to projects. This internship at Lentii is a valuable opportunity for my professional growth in frontend development."

@@ -1,15 +1,30 @@
 @import "../../styles/contants.scss";
 
 .wrapper {
+  background: linear-gradient(120deg, #eaf6f5 0%, #f8fafc 100%);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   .container {
     .heading {
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #286F6C;
+        text-align: center;
+        letter-spacing: 1px;
+      }
       p {
         line-height: 30px;
+        color: #888;
+        font-size: 1.08rem;
+        text-align: center;
+        margin-top: 0.7rem;
       }
     }
     .comments {
-      //slider settings
       .slider :global {
         .slick-list {
           margin: 0 -4px;
@@ -28,50 +43,99 @@
           }
         }
       }
-
       .comment {
-        box-shadow: rgb(0 0 0 / 5%) -3px 11px 13px 0px;
-        padding: 1rem;
+        box-shadow: 0 4px 24px rgba(40,111,108,0.09);
+        padding: 2.1rem 1.6rem 1.6rem 1.6rem;
         display: flex !important;
         flex-direction: column;
         gap: 0.7rem;
-        background: white;
-        border-radius: 20px;
+        background: rgba(255,255,255,0.18);
+        border-radius: 22px;
         position: relative;
-
-        img {
-          margin: auto;
-          border-radius: 100%;
-          width: 2.5rem;
-          position: absolute;
-          top: -1.2rem;
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
+        border: 1.5px solid rgba(40,111,108,0.07);
+        align-items: center;
+        min-height: 180px;
+        transition: box-shadow 0.3s, border-color 0.3s;
+        .avatarWrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1.1rem;
+          width: 84px;
+          height: 84px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #EEC048 0%, #286F6C 100%);
+          padding: 4px;
+          box-sizing: border-box;
         }
-
+        .avatarWrap img {
+          width: 76px;
+          height: 76px;
+          border-radius: 50%;
+          object-fit: cover;
+          box-shadow: 0 2px 12px rgba(40,111,108,0.13);
+          background: #fff;
+          display: block;
+        }
+        .quoteIcon {
+          position: absolute;
+          top: 1.1rem;
+          left: 1.2rem;
+          z-index: 2;
+        }
         p {
           text-align: center;
-          font-size: 0.8rem;
-          line-height: 18px;
+          font-size: 1.08rem;
+          line-height: 1.6;
+          color: #286F6C;
+          margin-bottom: 1.1rem;
+          position: relative;
         }
-
+        &.slick-active {
+          box-shadow: 0 12px 40px rgba(40,111,108,0.18);
+          border-color: #EEC048;
+          transform: scale(1.04);
+          transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+        }
         .line {
           width: 100%;
           border: 0.2px solid rgb(234, 234, 234);
         }
-
         .bio {
           > * {
             display: block;
             text-align: center;
           }
           > :nth-child(1) {
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 5px;
+            color: #286F6C;
+            font-size: 1.07rem;
           }
           > :nth-child(2) {
-            font-size: 0.7rem;
-            color: rgb(172, 172, 172);
+            font-size: 0.97rem;
+            color: #888;
           }
+        }
+        &::before {
+          content: '“';
+          position: absolute;
+          top: 1.1rem;
+          left: 1.2rem;
+          font-size: 2.2rem;
+          color: #EEC048;
+          font-weight: 800;
+          opacity: 0.7;
+        }
+        &::after {
+          content: '”';
+          position: absolute;
+          bottom: 1.1rem;
+          right: 1.2rem;
+          font-size: 2.2rem;
+          color: #EEC048;
+          font-weight: 800;
+          opacity: 0.7;
         }
       }
     }

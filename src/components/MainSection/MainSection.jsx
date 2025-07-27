@@ -5,13 +5,14 @@ import { WhatDoIHelp } from "../../utils/data";
 
 const MainSection = () => {
   return (
-    <section className={css.wrapper}>
+    <section className={css.wrapper} style={{ padding: "8px 0", marginTop: "-70px" }}>
       <motion.div
         initial="hidden"
         whileInView="show"
         variants={staggerContainer}
         viewport={{ once: true, amount: 0.25 }}
         className={css.container}
+        style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
         <div className={css.leftBlock}>
           <motion.img
@@ -33,8 +34,11 @@ const MainSection = () => {
             Front-End Developer
           </motion.div>
           <motion.div
-            variants={fadeIn("up", "tween", 0.5, 1)}
             className={css.heroActions}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.5, type: "spring" }}
+            viewport={{ once: true }}
           >
             <a
               className={css.heroCv}
@@ -54,7 +58,15 @@ const MainSection = () => {
           </motion.div>
         </div>
         <div className={css.rightBlock}>
-          <span className={css.aboutTitle}>About me</span>
+          <motion.span
+            className={css.aboutTitle}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            About me
+          </motion.span>
           {WhatDoIHelp.map((paragraph, i) => (
             <motion.span
               className={css.aboutText}

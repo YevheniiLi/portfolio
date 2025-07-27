@@ -1,3 +1,4 @@
+
 import css from "./Header.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
@@ -23,16 +24,15 @@ const Header = () => {
         <a className="anchor" id="home"></a>
 
         <div className={`flexCenter innerWidth ${css.container}`}>
-          <div className={css.name}>YEVHENII.</div>
+          <div className={css.name}>
+            Code & Design
+          </div>
           <ul
             style={getMenuStyles(menuOpened)}
             className={`flexCenter ${css.menu}`}
           >
             <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#experties">About me</a>
+              <a href="#home">About me</a>
             </li>
             <li>
               <a href="#work">Experience</a>

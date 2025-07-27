@@ -31,16 +31,23 @@ const People = () => {
           <Slider {...sliderSettings} className={css.slider} autoplay={true}>
             {comments.map((comment, i) => {
               return (
-                <div className={`flexCenter ${css.comment}`} key={i}>
-                  <img src={comment.img} alt="" />
-                  <p>{comment.comment}</p>
-
+                <motion.div
+                  className={`flexCenter ${css.comment}`}
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6 }}
+                >
+                  <div className={css.avatarWrap}>
+                    <img src={comment.img} alt="" />
+                  </div>
+                  <p>“{comment.comment}”</p>
                   <div className={css.line}></div>
                   <div className={css.bio}>
                     <span>{comment.name}</span>
                     <span>{comment.post}</span>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </Slider>

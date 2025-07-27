@@ -1,3 +1,137 @@
+.dotDecor {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #eee;
+  margin: 0 1.2rem;
+  vertical-align: middle;
+  box-shadow: 0 0 4px 0 #ccc;
+}
+.onlineDot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #25d366;
+  margin-right: 8px;
+  vertical-align: middle;
+  box-shadow: 0 0 6px 0 #25d36699;
+}
+// Больше воздуха и шире иконки для контактов
+.contact {
+  display: flex;
+  gap: 2.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 1.2rem;
+    .primaryText {
+      color: #229ED9;
+      font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+    }
+}
+
+.contactItem img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 4.2rem;
+.decorLine {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #EA4335 0%, #229ED9 50%, #25D366 100%);
+  border-radius: 2px;
+  margin: 2.2rem 0 1.2rem 0;
+  opacity: 0.18;
+}
+.decorSVG {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  transform: translateY(-50%);
+  opacity: 0.13;
+  pointer-events: none;
+}
+.decorSVGRight {
+  left: auto;
+  right: 0;
+}
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 2.2rem;
+}
+
+.social {
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: none;
+  padding: 0.3rem;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, transform 0.18s;
+  position: relative;
+  border: 3px solid #eee;
+  margin: 0 0.5rem;
+  width: 64px;
+  height: 64px;
+}
+
+.gmail {
+  border-color: #EA4335;
+}
+.telegram {
+  border-color: #229ED9;
+  position: relative;
+}
+
+.whatsapp {
+  border-color: #25D366;
+}
+  // box-shadow: 0 12px 40px rgba(40,111,108,0.18);
+  // transform: translateY(-4px) scale(1.04);
+
+.social img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: none;
+  padding: 0;
+}
+.social h4 {
+  display: none;
+}
+.social a {
+  font-size: 1rem;
+  color: #286F6C;
+  text-decoration: none;
+  margin-bottom: 0;
+  transition: color 0.18s;
+  text-align: center;
+  font-weight: 600;
+}
+.social a:hover {
+  color: #EEC048;
+}
 /* Footer.module.scss */
 
 @import "../../styles/contants.scss";
@@ -21,7 +155,6 @@
 
     .contact {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       @media (max-width: $sm), (max-width: $md) {
@@ -30,6 +163,36 @@
       }
       width: 100%;
     }
+
+// Подзаголовок под основным заголовком
+.subheading {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  font-size: 1.18rem;
+  color: #229ED9;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  transition: color 0.2s;
+}
+
+// Контейнер для одного контакта
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+// Лаконичная подпись под иконкой
+.contactLabel {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-weight: 500;
+  margin-top: 2px;
+  letter-spacing: 0.01em;
+}
 
     .social {
       background-color: #fff;
@@ -61,6 +224,10 @@
         color: #18b0cf;
         font-size: 0.8rem;
       }
+    }
+    .social:hover {
+      box-shadow: 0 12px 40px rgba(40,111,108,0.18);
+      transform: translateY(-4px) scale(1.04);
     }
 
     form {

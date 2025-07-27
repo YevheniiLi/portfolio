@@ -24,18 +24,18 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
-    place: "Aarhus, Middle Jutland, Denmark",
-    tenure: "Apr 2023 - Present · 9 mos",
-    role: "Front-end developer",
+    place: "Aarhus, Denmark",
+    tenure: "Apr 2023 - Mar 2024 · 1 yr",
+    role: "Front-end Developer",
     detail:
-      "As a Frontend Development Intern at Lentii, I work with modern tools and programming practices, gaining experience in AngularJS, TypeScript, Bootstrap, Tailwind CSS, and Bitbucket. I collaborate with experienced developers, creating user-friendly interfaces and contributing to projects. This internship at Lentii is a valuable opportunity for my professional growth in frontend development."
-    },
+      "Lentii: worked with Angular, TypeScript, Bootstrap, Tailwind, Bitbucket. Created user-friendly interfaces, collaborated in a team, improved frontend skills. Great experience for growth."
+  },
   {
-    place: "GoIT School· Full-time",
+    place: "GoIT School",
     tenure: "Dec 2021 - Jan 2023 · 1 yr 2 mos",
     role: "Full Stack Developer",
     detail:
-      "At GoIT, I contributed to cutting-edge projects as a Full Stack Developer, gaining expertise in React.js, JavaScript, HTML5, CSS, SASS, Redux, GitHub, Git, and REST API. GoIT's innovative and supportive environment provided significant professional growth in the IT industry.",
+      "GoIT: participated in projects with React, JS, HTML, CSS, SASS, Redux, GitHub, REST API. Gained valuable experience and professional growth in IT."
   },
 ];
 
@@ -48,8 +48,8 @@ export const comments = [
     img: "./images/joseph.jpeg",
   },
   {
-    name: "Obinna Okoma",
-    post: "UI/UX Designer",
+  autoplay: true,
+  autoplaySpeed: 1800,
     comment:
       "I am delighted to recommend Yevhenii as a highly skilled and dedicated Frontend Developer. During our time working together at Lentii ApS Denmark, I had the privilege of witnessing his exceptional technical expertise and unwavering commitment to delivering outstanding results. In conclusion, I endorse Yevhenii as a Frontend Developer. His exceptional skills, unwavering dedication, and positive attitude truly set him apart as a standout professional in his field.",
     img: "./images//obianna.png",

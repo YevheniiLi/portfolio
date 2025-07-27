@@ -1,84 +1,56 @@
 /* eslint-disable react/no-unescaped-entities */
+
 import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const Hero = () => {
   return (
-    <section className={`paddings ${css.wrapper}`}>
+    <section className={css.wrapper}>
       <motion.div
         initial="hidden"
         whileInView="show"
         variants={staggerContainer}
         viewport={{ once: true, amount: 0.25 }}
-        className={`innerWidth ${css.container}`}
+        className={css.container}
       >
-        {/* {upper elements} */}
-        <div className={css.upperElements}>
-          <motion.span
-            variants={fadeIn("right", "tween", 0.2, 1)}
-            className="primaryText"
-          >
-            Greetings, <br /> I'm Yevhenii.
-          </motion.span>
-
-          {/* {cv} */}
-          <motion.a
-            variants={fadeIn("right", "tween", 0.3, 1)}
-            className={css.email}
+        <motion.img
+          variants={fadeIn("up", "tween", 0.2, 1)}
+          src="./images/person.jpeg"
+          alt="Yevhenii Lymarenko"
+          className={css["hero-photo"]}
+        />
+        <motion.h1
+          variants={fadeIn("up", "tween", 0.3, 1)}
+          className={css.heroTitle}
+        >
+          Yevhenii Lymarenko
+        </motion.h1>
+        <motion.div
+          variants={fadeIn("up", "tween", 0.4, 1)}
+          className={css.heroSubtitle}
+        >
+          Front-End Developer
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", "tween", 0.5, 1)}
+          className={css.heroActions}
+        >
+          <a
+            className={css.heroCv}
             href="https://drive.google.com/uc?export=download&id=18YoAw962WatK2moG4QQr7CeGAJySSPGu"
             download
           >
-            <img src="./images/cv.png" alt="Download" width="90" />
-          </motion.a>
-        </div>
-
-        {/* {person image} */}
-        <motion.div
-          variants={fadeIn("up", "tween", 0.3, 1)}
-          className={css.person}
-          style={{ transform: "translateZ(0)" }}
-        >
-          <motion.img
-            variants={slideIn("up", "tween", 0.5, 1)}
-            src="./images/person.jpeg"
-            alt=""
-            width="500"
-            style={{ transform: "scaleX(-1) translateZ(0)" }}
-          />
-          <div className={css.caption}>FRONT-END DEVELOPER</div>
+          </a>
+          <div className={css.heroSocials}>
+            <a href="https://www.linkedin.com/in/lymarenko/" target="_blank" rel="noopener noreferrer">
+              <img src="./images/linkedin.png" alt="LinkedIn" width="56" height="56" />
+            </a>
+            <a href="https://github.com/YevheniiLi" target="_blank" rel="noopener noreferrer">
+              <img src="./images/github.png" alt="GitHub" width="56" height="56" />
+            </a>
+          </div>
         </motion.div>
-
-        {/* {lower elements} */}
-        <div className={css.lowerElements}>
-          <motion.div
-            variants={fadeIn("right", "tween", 0.3, 1)}
-            className={css.social}
-          >
-            <div className="primaryText"></div>
-            <div className="secondaryText">
-              <a href="https://www.linkedin.com/in/lymarenko/" target="blank">
-                <img
-                  src="./images/linkedin.png"
-                  alt="LinkedIn"
-                  width="50"
-                  style={{ marginRight: "15px" }}
-                />
-              </a>
-              <a href="https://github.com/YevheniiLi" target="blank">
-                <img src="./images/github.png" alt="LinkedIn" width="50" />
-              </a>
-            </div>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", "tween", 0.5, 1)}
-            className={css.cerificate}
-          >
-            <img src="./images/certificate.png" alt="" />
-            <span style={{ marginBottom: "5px" }}>MATERIALS ENGINEER</span>
-            <span>CERTIFIED FULL STACK ENGINEER</span>
-          </motion.div>
-        </div>
       </motion.div>
     </section>
   );

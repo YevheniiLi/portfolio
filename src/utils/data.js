@@ -17,7 +17,9 @@ export const projectExperience = [
 ];
 
 export const WhatDoIHelp = [
-  "Hello, I'm Yevhenii. Originally from Ukraine and currently residing in Girona, near Barcelona, Spain. I'm a passionate web developer with a strong focus on front-end and full-stack development. I'm dedicated to exploring new technologies and have a keen interest in the field of artificial intelligence. In addition to my tech interests, I'm an avid traveler who has had the opportunity to visit many countries, including Germany, Switzerland, China, Turkey, and Hong Kong. My travels have enriched my experience and fueled my curiosity, which I bring to my work in web development.I have two years of experience in web development and am committed to staying up-to-date with industry trends. I'm actively seeking opportunities to work on exciting projects with a dynamic team. Thank you for considering me for this opportunity."
+  "Hi, I'm Yevhenii — Frontend Developer from Ukraine, living in Girona, Spain.",
+  "Certified Full Stack Developer. 2 years experience in web development. Worked with React, SCSS, UI/UX and modern web technologies. Projects in international teams and startups.",
+  "Key strengths: minimalistic design, performance, clean code, attention to detail and focus on user needs."
 ];
 
 export const workExp = [

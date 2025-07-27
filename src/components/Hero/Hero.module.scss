@@ -1,182 +1,220 @@
+
+@import "../../styles/contants.scss";
+
 @import "../../styles/contants.scss";
 
 .wrapper {
-  @media (max-width: $md) {
-    height: min(100vh, 850px);
-  }
-  @media (min-width: 375px) and (max-width: 390px) {
-    height: min(100vh, 720px);
-  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f8fafc 60%, #e0f7fa 100%);
+  padding: 0 1.5rem;
+}
 
-  @media (min-width: $xl) {
-    height: min(100vh, 720px);
-  }
-  overflow: hidden;
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2rem 0;
+}
 
+.hero-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border: 4px solid #fff;
+  background: #e0f7fa;
+  transition: box-shadow 0.3s;
+  margin-bottom: 0.5rem;
+}
+.hero-photo:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.28);
+}
+
+.hero-title {
+  font-family: "Agbalumo", sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00bfff, #6b8e23);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #2d3a4a;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  background: rgba(224,247,250,0.5);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.hero-cv {
+  padding: 0.7rem 1.6rem;
+  background: linear-gradient(90deg, #6b8e23, #00bfff);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+}
+.hero-cv:hover {
+  background: linear-gradient(90deg, #00bfff, #6b8e23);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+}
+
+.hero-socials {
+  display: flex;
+  gap: 5rem;
+}
+.hero-socials a {
+  color: #00bfff;
+  font-size: 1.5rem;
+  transition: color 0.2s, transform 0.2s;
+  background: #f8fafc;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 0.3rem;
+}
+.hero-socials a:hover {
+  color: #6b8e23;
+  transform: scale(1.15);
+  background: #e0f7fa;
+}
+
+@media (max-width: 600px) {
   .container {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    .upperElements {
-      @media (max-width: $sm) {
-        justify-content: center;
-        text-align: center;
-        gap: 2rem;
-      }
+    max-width: 98vw;
+    gap: 1.2rem;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .hero-title {
+    font-size: 1.4rem;
+  }
+  .hero-photo {
+    width: 70px;
+    height: 70px;
+  }
+  .hero-actions {
+    gap: 0.7rem;
+    flex-direction: column;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+  }
+}
+.hero-title {
+  font-family: "Agbalumo", sans-serif;
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00bfff, #6b8e23);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #444;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 
-    // social links //
-    .lowerElements {
-      @media (max-width: $sm), (max-width: $md) {
-        margin-top: 4rem;
-        gap: 2rem;
-        justify-content: center;
-      }
-      margin-top: 12rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      .social {
-        @media (min-width: 375px) and (max-width: 390px) {
-          top: 450px !important;
-        }
-        @media (max-width: $sm), (max-width: $md) {
-          top: 550px;
-          right: 5px;
-        }
-        @media (min-width: $md) and (max-width: $lg) {
-          top: -50px;
-        }
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        position: relative;
-        top: 170px;
-        right: 10px;
-        > :nth-child(2) {
-          line-height: 25px;
-        }
-      }
+.hero-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
 
-      // certificate //
-      .cerificate {
-        @media (min-width: 375px) and (max-width: 390px) {
-          display: none;
-        }
-        @media (max-width: $sm), (max-width: $md) {
-          top: 520px;
-          left: 10px;
-        }
-        @media (min-width: $md) and (max-width: $lg) {
-          top: 20px;
-        }
+.hero-cv {
+  padding: 0.7rem 1.6rem;
+  background: linear-gradient(90deg, #6b8e23, #00bfff);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.hero-cv:hover {
+  background: linear-gradient(90deg, #00bfff, #6b8e23);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+}
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 140px;
-        left: 40px;
-        font-size: 12px;
+.hero-socials {
+  display: flex;
+  gap: 2.5rem;
+}
+.hero-socials a {
+  color: #00bfff;
+  font-size: 1.5rem;
+  transition: color 0.2s, transform 0.2s;
+}
+.hero-socials a:hover {
+  color: #6b8e23;
+  transform: scale(1.15);
+}
 
-        img {
-          margin-bottom: 1rem;
-          width: 3.5rem;
-        }
-      }
-    }
-
-    // image person //
-    .person {
-      @media (max-width: $sm), (max-width: $md) {
-        position: absolute;
-        top: 6rem;
-        left: 0;
-        background-size: 20rem;
-        align-items: center;
-        justify-content: center;
-        background-position: bottom;
-      }
-      @media (min-width: $md) and (max-width: $lg) {
-        left: 25%;
-      }
-
-      @media (min-width: 375px) and (max-width: 390px) {
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-      }
-      position: absolute;
-      bottom: -10rem;
-      margin: auto;
-      background-repeat: no-repeat;
-      background-size: 28rem;
-      background-position: bottom;
-      left: 30%;
-      @media (min-width: $md) {
-        bottom: -11rem;
-      }
-      // title //
-      .caption {
-        @media (min-width: 375px) and (max-width: 390px) {
-          font-size: 30px;
-          top: 90px;
-          display: flex;
-          justify-content: center;
-        }
-        @media (min-width: $xl) {
-          margin-top: 150px;
-          top: -50px;
-        }
-
-        font-family: "Agbalumo", sans-serif;
-        text-align: center;
-        font-size: 40px;
-        position: relative;
-        top: 100px;
-      }
-      img {
-        @media (max-width: $sm) {
-          width: 24rem;
-          border-radius: 50%;
-          box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75); // Добавлено свойство box-shadow
-        }
-        @media (min-width: 375px) and (max-width: 390px) {
-          border-radius: 0px;
-          width: 24rem;
-          position: relative;
-          right: 22px;
-          border-radius: 50%;
-          box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75); // Добавлено свойство box-shadow
-        }
-        @media (min-width: $md) and (max-width: $lg) {
-          margin-bottom: 100px;
-        }
-        margin-bottom: -70px;
-        border-radius: 50%;
-        box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.75); // Добавлено свойство box-shadow
-      }
-    }
-
-    // cv //
-    .email {
-      @media (max-width: $sm) {
-        position: relative;
-        display: none;
-      }
-      @media (min-width: $md) and (max-width: $lg) {
-        top: 20%;
-      }
-      position: absolute;
-      top: 50%;
-      right: 0;
-      color: olivedrab;
-      text-decoration: none;
-    }
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    gap: 1.5rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-photo {
+    width: 90px;
+    height: 90px;
+  }
+  .hero-actions {
+    gap: 1rem;
+    flex-direction: column;
   }
 }

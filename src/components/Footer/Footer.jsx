@@ -1,61 +1,61 @@
 import css from "./Footer.module.scss";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons"; // Import the checkmark icon
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+// import { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCheck } from "@fortawesome/free-solid-svg-icons"; // Import the checkmark icon
+// import { useRef } from "react";
+// import emailjs from "@emailjs/browser";
 
 const Footer = () => {
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm(
-      "service_oybnjpq",
-      "template_ogmc7h9",
-      form.current,
-      "4g6wne_TfkxwNmITn"
-    );
-    e.target.reset();
-  };
+  //   emailjs.sendForm(
+  //     "service_oybnjpq",
+  //     "template_ogmc7h9",
+  //     form.current,
+  //     "4g6wne_TfkxwNmITn"
+  //   );
+  //   e.target.reset();
+  // };
 
-  const [isClicked, setIsClicked] = useState(false);
-  const [isSent, setIsSent] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const [isClicked, setIsClicked] = useState(false);
+  // const [isSent, setIsSent] = useState(false);
+  // const [isSubmitted, setIsSubmitted] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    setIsClicked(true);
-    setTimeout(() => {
-      setIsClicked(false);
-      setIsSent(true);
-    }, 2250);
+  // const handleClick = (e) => {
+  //   e.preventDefault();
+  //   setIsClicked(true);
+  //   setTimeout(() => {
+  //     setIsClicked(false);
+  //     setIsSent(true);
+  //   }, 2250);
 
-    setTimeout(() => {
-      setIsSubmitted(true);
-      setIsSent(false);
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
-    }, 2000);
-  };
+  //   setTimeout(() => {
+  //     setIsSubmitted(true);
+  //     setIsSent(false);
+  //     setIsSubmitted(false);
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       message: "",
+  //     });
+  //   }, 2000);
+  // };
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
 
   return (
     <div className={css.wrapper}>
@@ -94,7 +94,7 @@ const Footer = () => {
               </a>
             </article>
           </div>
-          <form ref={form} onSubmit={sendEmail}>
+          {/* <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
               name="name"
@@ -128,7 +128,7 @@ const Footer = () => {
             >
               {isSent ? <FontAwesomeIcon icon={faCheck} /> : "SUBMIT"}
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </div>

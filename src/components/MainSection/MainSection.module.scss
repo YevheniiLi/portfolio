@@ -1,0 +1,195 @@
+@import "../../styles/contants.scss";
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #f8fafc 60%, #e0f7fa 100%);
+  padding: 0 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  background: rgba(255,255,255,0.92);
+  border-radius: 36px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 3rem 3rem 2.5rem 3rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 2rem 0;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 98vw;
+  }
+}
+
+.leftBlock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.heroPhoto {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border: 4px solid #fff;
+  background: #e0f7fa;
+  transition: box-shadow 0.3s;
+  margin-bottom: 0.5rem;
+}
+.heroPhoto:hover {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.28);
+}
+
+.heroTitle {
+  font-family: "Agbalumo", sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00bfff, #6b8e23);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  color: #2d3a4a;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  background: rgba(224,247,250,0.5);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.heroActions {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.heroCv {
+  padding: 0.7rem 1.6rem;
+  background: linear-gradient(270deg, #6b8e23, #00bfff, #eec048, #6b8e23);
+  background-size: 400% 400%;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background-position 1.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s;
+  letter-spacing: 0.5px;
+}
+.heroCv:hover {
+  background-position: 100% 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+}
+
+.heroSocials {
+  display: flex;
+  gap: 3.5rem;
+}
+.heroSocials a {
+  color: #00bfff;
+  font-size: 1.5rem;
+  transition: color 0.2s, transform 0.2s;
+  background: #f8fafc;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 0.3rem;
+}
+.heroSocials a:hover {
+  color: #6b8e23;
+  transform: scale(1.15);
+  background: #e0f7fa;
+}
+
+.rightBlock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  @media (max-width: 900px) {
+    padding-left: 0;
+  }
+}
+
+.aboutTitle {
+  font-size: 1.6rem;
+  font-family: 'Agbalumo', 'Eudoxus Sans', sans-serif;
+  background: linear-gradient(90deg, #286F6C 0%, #EEC048 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0 2px 12px rgba(40, 111, 108, 0.12);
+  margin-bottom: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.aboutText {
+  font-size: 1rem;
+  color: #222;
+  font-family: 'Inter', 'Eudoxus Sans', 'Arial', sans-serif;
+  line-height: 1.8;
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 2px 12px rgba(40, 111, 108, 0.07);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .heroTitle {
+    font-size: 1.4rem;
+  }
+  .heroPhoto {
+    width: 70px;
+    height: 70px;
+  }
+  .heroActions {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .aboutTitle {
+    font-size: 1.2rem;
+  }
+  .aboutText {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.5rem;
+  }
+}

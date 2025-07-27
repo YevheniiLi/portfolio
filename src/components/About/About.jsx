@@ -1,62 +1,46 @@
 import css from "./About.module.scss";
-import { WhatDoIHelp } from "../../utils/data";
+
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
+import { staggerContainer, slideIn } from "../../utils/motion";
+import { WhatDoIHelp } from "../../utils/data";
 
 const About = () => {
   return (
-    <motion.section
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={css.wrapper}
-    >
+    <section className={css.wrapper}>
       <a className="anchor" id="experties"></a>
-      <div
-        className={`paddings yPaddings flexCenter innerWidth ${css.container}`}
-      >
+      <div className={`paddings yPaddings flexCenter innerWidth ${css.container}`}>
         <motion.div
-          variants={textVariant(0.5)}
           className={css.leftSide}
-          style={{ textAlign: "justify" }}
+          variants={staggerContainer(0.25, 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
         >
-          <span
-            className="primaryText"
-            style={{ fontSize: "25px", position: "relative", left: "10px" }}
-          >
-            About me
-          </span>
-          {WhatDoIHelp.map((paragraph, i) => {
-            return (
-              <span
-                className="secondaryText"
-                style={{ fontSize: "15px", position: "relative", left: "10px" }}
-                key={i}
-              >
-                {paragraph}
-              </span>
-            );
-          })}
+          <span className="primaryText">About me</span>
+          {WhatDoIHelp.map((paragraph, i) => (
+            <motion.span
+              className="secondaryText"
+              key={i}
+              variants={slideIn("right", "spring", 0.3 + i * 0.3, 0.7)}
+            >
+              {paragraph}
+            </motion.span>
+          ))}
         </motion.div>
         <div className={css.rightSide}>
-          <motion.span
-            variants={fadeIn("right", "tween", 0.2, 1)}
-            className="primaryText"
-          ></motion.span>
           <motion.img
             className="about-image"
-            variants={fadeIn("left", "tween", 0.4, 1)}
-            src="./images/about.jpeg"
-            alt=""
-            style={{
-              borderRadius: "5%",
-              transform: "scaleX(-1) translateZ(0)",
+            variants={{
+              hidden: { opacity: 0, scale: 0.85, x: 40 },
+              show: { opacity: 1, scale: 1, x: 0, transition: { type: "spring", duration: 1.2 } }
             }}
+            src="./images/about.jpeg"
+            alt="Yevhenii Lymarenko portrait"
+            style={{ objectFit: "cover", borderRadius: "10%", boxShadow: "0 4px 24px rgba(40,111,108,0.12)" }}
           />
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

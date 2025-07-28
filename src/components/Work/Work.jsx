@@ -9,14 +9,22 @@ const Work = () => {
     <section className={`paddings ${css.wrapper}`}>
       <a className="anchor" id="work"></a>
       <div className={`flexCenter innerWidth ${css.container}`}> 
-        <span className={css.workTitle}>Work Experience</span>
+        <motion.span
+          className={css.workTitle}
+          initial={{ y: 30 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          Work Experience
+        </motion.span>
         <div className={css.workCardsWrapper}>
           {workExp.map((exp, i) => (
             <motion.div
               className={css.workCard}
               key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 30 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 + i * 0.15 }}
               viewport={{ once: true }}
             >

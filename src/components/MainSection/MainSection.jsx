@@ -79,10 +79,10 @@ const MainSection = () => {
             <motion.span
               className={css.aboutText}
               key={i}
-              initial={{ x: 10, scale: 0.98, opacity: 0 }}
+              initial={{ x: 80, scale: 0.98, opacity: 0 }}
               animate={{ x: 0, scale: 1, opacity: 1 }}
-              exit={{ x: -10, scale: 0.98, opacity: 0 }}
-              transition={{ duration: 0.4, delay: 0.2 * i, ease: "easeOut" }}
+              exit={{ x: -80, scale: 0.98, opacity: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 * i, type: "spring", stiffness: 120 }}
             >
               {paragraph}
             </motion.span>

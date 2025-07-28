@@ -37,9 +37,10 @@
   gap: 1.5rem;
 }
 
-.heroPhoto {
-  width: 140px;
-  height: 140px;
+// ...existing code...
+.heroPhoto, .heroPhoto img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
@@ -47,8 +48,9 @@
   background: #e0f7fa;
   transition: box-shadow 0.3s;
   margin-bottom: 0.5rem;
+  display: block;
 }
-.heroPhoto:hover {
+.heroPhoto:hover, .heroPhoto img:hover {
   box-shadow: 0 12px 40px rgba(0,0,0,0.28);
 }
 

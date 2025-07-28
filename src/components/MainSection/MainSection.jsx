@@ -15,12 +15,20 @@ const MainSection = () => {
         style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
       >
         <div className={css.leftBlock}>
-          <motion.img
+          <motion.picture
             variants={fadeIn("up", "tween", 0.2, 1)}
-            src="./images/person.jpeg"
-            alt="Yevhenii Lymarenko"
             className={css.heroPhoto}
-          />
+          >
+            <source srcSet="./images/person.jpg" type="image" />
+            <img
+              src="./images/person.jpg"
+              alt="Yevhenii Lymarenko"
+              width="150"
+              height="150"
+              loading="lazy"
+              style={{ display: 'block', width: '200px', height: '200px', objectFit: 'cover', borderRadius: '50%' }}
+            />
+          </motion.picture>
           <motion.h1
             variants={fadeIn("up", "tween", 0.3, 1)}
             className={css.heroTitle}
@@ -71,10 +79,10 @@ const MainSection = () => {
             <motion.span
               className={css.aboutText}
               key={i}
-              initial={{ opacity: 0, x: 80 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 + i * 0.3, type: "spring" }}
-              viewport={{ once: true }}
+              initial={{ x: 10, scale: 0.98, opacity: 0 }}
+              animate={{ x: 0, scale: 1, opacity: 1 }}
+              exit={{ x: -10, scale: 0.98, opacity: 0 }}
+              transition={{ duration: 0.4, delay: 0.2 * i, ease: "easeOut" }}
             >
               {paragraph}
             </motion.span>

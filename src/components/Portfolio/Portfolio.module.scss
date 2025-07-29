@@ -27,7 +27,7 @@
   background: linear-gradient(135deg, #f8fafc 0%, #eaf6f5 100%);
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(40,111,108,0.09);
-  border: 1.5px solid rgba(40,111,108,0.07); /* едва заметная рамка */
+  border: 1.5px solid rgba(40,111,108,0.07);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,13 @@
 .projectCard:hover {
   transform: translateY(-6px) scale(1.06);
   box-shadow: 0 12px 40px rgba(40,111,108,0.18);
+  border-color: #eec048;
+}
+
+/* Убрать нижний оттенок/градиент для второй карточки (goit) */
+.projectCard:nth-child(2) {
+  background: linear-gradient(135deg, #f8fafc 0%, #eaf6f5 100%) !important;
+  box-shadow: 0 4px 24px rgba(40,111,108,0.09) !important;
 }
 
 

@@ -1,13 +1,11 @@
 
 import css from "./Header.module.scss";
-import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
-import { getMenuStyles, headerVariants } from "../../utils/motion";
-import { useState } from "react";
+import { headerVariants } from "../../utils/motion";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 
 const Header = () => {
-  const [menuOpened, setMenuOpened] = useState(false);
+  // burger menu state removed
   const headerShadow = useHeaderShadow();
 
   return (
@@ -28,7 +26,6 @@ const Header = () => {
             Code & Design
           </div>
           <ul
-            style={getMenuStyles(menuOpened)}
             className={`flexCenter ${css.menu}`}
           >
             <li>
@@ -47,13 +44,7 @@ const Header = () => {
               <a href="#contacts">Contacts</a>
             </li>
           </ul>
-          {/* {for medium and small screens} */}
-          <div
-            className={css.menuIcon}
-            onClick={() => setMenuOpened((prev) => !prev)}
-          >
-            <BiMenuAltRight size={30} />
-          </div>
+          {/* burger menu removed for all screen sizes */}
         </div>
       </motion.div>
     </>

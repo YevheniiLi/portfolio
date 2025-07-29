@@ -1,8 +1,5 @@
+import { useEffect } from "react";
 import css from "./Portfolio.module.scss";
-import { motion } from "framer-motion";
-import { fadeIn, staggerChildren, textVariant } from "../../utils/motion";
-
-
 
 const projects = [
   {
@@ -39,31 +36,40 @@ const Portfolio = () => {
     WebkitTextFillColor: "transparent",
     backgroundClip: "text",
   };
+
+  useEffect(() => {
+    const handleAnchorClick = (e) => {
+      const anchor = e.target.closest('a[href^="#"]');
+      if (anchor) {
+        const id = anchor.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          window.history.replaceState(null, '', window.location.pathname);
+        }
+      }
+    };
+    document.addEventListener('click', handleAnchorClick);
+    return () => document.removeEventListener('click', handleAnchorClick);
+  }, []);
+
   return (
-    <motion.section
-      variants={staggerChildren}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      className={`paddings ${css.wrapper}`}
-    >
+    <section className={`paddings ${css.wrapper}`}>
       <a className="anchor" id="portfolio"></a>
       <div className={`innerWidth ${css.container}`}> 
-        <motion.div
-          variants={textVariant(0.4)}
-          className={css.heading}
-        >
+        <div className={css.heading}>
           <span className={css.primaryText} style={headingStyle}>Selected Projects</span>
           <span className={css.subTitle}>Best web apps & UI/UX cases</span>
-        </motion.div>
-        <motion.div className={css.projectsGrid} variants={staggerChildren}>
+        </div>
+        <div className={css.projectsGrid}>
           {projects.map((p, i) => (
-            <motion.div
+            <div
               className={css.projectCard}
               key={i}
-              variants={fadeIn("up", "tween", 0.2 + i * 0.18, 0.7)}
-              whileHover={{ scale: 1.04, boxShadow: "0 8px 32px rgba(40,111,108,0.13)" }}
               style={{ cursor: "pointer" }}
+              onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
+              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             >
               <div className={css.projectImgWrap}>
                 {p.title === "Chat App" && (
@@ -91,9 +97,9 @@ const Portfolio = () => {
                 <div className={css.projectStack}>{p.stack.join(" · ")}</div>
                 <div className={css.projectDesc}>{p.desc}</div>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
         <div className={css.githubProjects}>
           <a
             href="https://github.com/YevheniiLi?tab=repositories"
@@ -105,7 +111,7 @@ const Portfolio = () => {
           </a>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

@@ -58,39 +58,10 @@
       }
 
       @media (max-width: $md) {
-        position: absolute;
-        flex-direction: column;
-        gap: 1.2rem;
-        right: 0;
-        top: 2.2rem;
-        width: 60%;
-        min-width: 12rem;
-        background: #fff;
-        padding: 1.2rem 1rem;
-        align-items: flex-start;
-        justify-content: flex-end;
-        border-radius: 1rem;
-        box-shadow: 0px 2px 8px rgba(40, 111, 108, 0.06);
-        transition: all 200ms ease;
+        display: none;
       }
     }
 
-    .menuIcon {
-      cursor: pointer;
-      display: none;
-      color: #286F6C;
-      background: #fff;
-      border-radius: 50%;
-      box-shadow: 0 1px 4px rgba(40, 111, 108, 0.05);
-      padding: 0.18rem;
-      transition: background 0.2s, box-shadow 0.2s;
-      &:hover {
-        background: #e0f7fa;
-        box-shadow: 0 2px 8px rgba(40, 111, 108, 0.10);
-      }
-      @media (max-width: $md) {
-        display: block;
-      }
-    }
+    /* .menuIcon styles removed: burger icon is gone */
   }
 }

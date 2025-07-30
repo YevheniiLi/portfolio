@@ -5,7 +5,10 @@ import { WhatDoIHelp } from "../../utils/data";
 
 const MainSection = () => {
   return (
-    <section className={css.wrapper} style={{ padding: "8px 0", marginTop: "-70px" }}>
+    <section
+      className={css.wrapper}
+      style={{ padding: "8px 0" }}
+    >
       <motion.div
         initial="hidden"
         whileInView="show"

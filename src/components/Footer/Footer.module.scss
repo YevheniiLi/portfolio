@@ -126,3 +126,23 @@
 .social a:hover {
   color: #EEC048;
 }
+
+@media (max-width: 600px) {
+  .contact {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+    margin-top: 1.2rem;
+  }
+  .social {
+    width: 44px;
+    height: 44px;
+    margin: 0 0.2rem;
+    padding: 0.1rem;
+    border-width: 2px;
+  }
+  .social img {
+    width: 32px;
+    height: 32px;
+  }
+}

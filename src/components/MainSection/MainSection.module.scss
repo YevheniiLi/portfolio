@@ -1,24 +1,154 @@
 @media (max-width: 600px) {
-  .header {
-    opacity: 0 !important;
-    pointer-events: none !important;
+  .wrapper {
+    background: #fff;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0 0.5rem;
+  }
+  .minimalMobileSection {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .minimalPhoto {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.7rem;
+    box-shadow: none;
+    background: #f8fafc;
+  }
+  .minimalTitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #229ED9;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+  .minimalSubtitle {
+    font-size: 0.98rem;
+    color: #286F6C;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .minimalDesc {
+    font-size: 0.97rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    font-family: 'Inter', 'Eudoxus Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
   }
 }
 @media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.7rem 0.1rem 1rem 0.1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin: 0.5rem 0;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+  }
   .heroPhoto, .heroPhoto img {
-    width: 38px;
-    height: 38px;
-    margin-bottom: 0.15rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+    width: 90px;
+    height: 90px;
+    margin-bottom: 0.2rem;
+    box-shadow: none;
     border-width: 2px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background: #fff;
   }
-
-  @keyframes headerSlideDown {
-    from {}
-    to {}
+  .heroTitle {
+    font-size: 1.2rem;
+    margin: 0.2rem 0 0.2rem 0;
+    letter-spacing: 0.2px;
+    text-align: center;
+    background: none;
+    color: #286F6C;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    text-shadow: none;
+  }
+  .heroSubtitle {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #2d3a4a;
+  }
+  .heroActions {
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 0.5rem;
+  }
+  .heroCv {
+    padding: 0.5rem 1.1rem;
+    font-size: 0.95rem;
+    border-radius: 18px;
+    box-shadow: none;
+    background: #229ED9;
+    background-size: initial;
+    color: #fff;
+    letter-spacing: 0.1px;
+  }
+  .heroSocials {
+    gap: 1.2rem;
+  }
+  .heroSocials a {
+    font-size: 1.1rem;
+    box-shadow: none;
+    padding: 0.1rem;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .rightBlock {
+    padding-left: 0;
+    gap: 0.7rem;
+  }
+  .aboutTitle {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.1px;
+    text-align: center;
+    background: none;
+    color: #229ED9;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    text-shadow: none;
+  }
+  .aboutText {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 7px;
+    box-shadow: none;
+    background: #f8fafc;
+    color: #222;
+    letter-spacing: 0.1px;
   }
 }
 @import "../../styles/contants.scss";
@@ -30,6 +160,7 @@
   justify-content: center;
   background: linear-gradient(120deg, #f8fafc 60%, #e0f7fa 100%);
   padding: 0 1.5rem;
+  margin-top: -70px;
 }
 
 .container {
@@ -178,6 +309,9 @@
   letter-spacing: 1.5px;
 }
 @media (max-width: 600px) {
+  .wrapper {
+    margin-top: 0;
+  }
   .aboutTitle {
     font-size: 1.05rem;
     margin-bottom: 0.2rem;

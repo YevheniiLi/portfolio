@@ -24,18 +24,18 @@ export const WhatDoIHelp = [
 
 export const workExp = [
   {
-    place: "Aarhus, Denmark",
-    tenure: "Apr 2023 - Mar 2024 · 1 yr",
-    role: "Front-end Developer",
-    detail:
-      "Lentii: worked with Angular, TypeScript, Bootstrap, Tailwind, Bitbucket. Created user-friendly interfaces, collaborated in a team, improved frontend skills. Great experience for growth."
-  },
-  {
     place: "GoIT School",
     tenure: "Dec 2021 - Jan 2023 · 1 yr 2 mos",
     role: "Full Stack Developer",
     detail:
-      "GoIT: participated in projects with React, JS, HTML, CSS, SASS, Redux, GitHub, REST API. Gained valuable experience and professional growth in IT."
+      "At GoIT, I contributed to EdTech projects as a Full Stack Developer, focusing on React.js, JavaScript, HTML5, CSS, SASS, Redux, GitHub and REST API. My work helped deliver practical web solutions for students and supported the company's mission to advance IT education."
+  },
+  {
+    place: "Lentii ApS (Aarhus, Denmark)",
+    tenure: "Apr 2023 - Mar 2024 · 1 yr",
+    role: "Front-end Developer",
+    detail:
+      "I participated in the development and support of Lentii's web platform. My main tasks included building and improving user interfaces with Angular, TypeScript, Bootstrap, Tailwind CSS, and Bitbucket. I integrated REST APIs, optimized performance and regularly participated in code reviews."
   },
 ];
 

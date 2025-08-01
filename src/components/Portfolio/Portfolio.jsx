@@ -5,31 +5,27 @@ const projects = [
   {
     img: "./images/chat.png",
     title: "Chat App",
-    stack: ["React", "SCSS", "Socket.io"],
+    stack: ["React", "Firebase", "Firestore"],
     desc: "Real-time chat with modern UI, authentication and notifications.",
-    demo: "https://chat-demo.example.com",
-    code: "https://github.com/YevheniiLi/chat-app"
+    code: "https://github.com/YevheniiLi/chatapp"
   },
   {
     img: "./images/maps.jpeg",
     title: "Maps Service",
-    stack: ["React", "Leaflet", "SCSS"],
+    stack: ["React", "Leaflet", "Google Maps API"],
     desc: "Interactive maps, geolocation, route planning and search.",
-    demo: "https://maps-demo.example.com",
-    code: "https://github.com/YevheniiLi/maps-service"
+    code: "https://github.com/YevheniiLi/google-maps-reactjs"
   },
   {
     img: "./images/trailer.jpeg",
     title: "Movie Trailer",
-    stack: ["React", "Redux", "API"],
+    stack: ["React", "Redux", "API", "Axios"],
     desc: "Browse and watch movie trailers, search and save favorites.",
-    demo: "https://trailer-demo.example.com",
-    code: "https://github.com/YevheniiLi/movie-trailer"
+    code: "https://github.com/YevheniiLi/trailer-now"
   }
 ];
 
 const Portfolio = () => {
-  // определяем цвет для заголовка по проекту (градиент)
   const headingStyle = {
     background: "linear-gradient(90deg, #EEC048 0%, #286F6C 100%)",
     WebkitBackgroundClip: "text",
@@ -64,10 +60,13 @@ const Portfolio = () => {
         </div>
         <div className={css.projectsGrid}>
           {projects.map((p, i) => (
-            <div
+            <a
               className={css.projectCard}
               key={i}
-              style={{ cursor: "pointer" }}
+              href={p.code}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ cursor: "pointer", textDecoration: "none" }}
               onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
               onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             >
@@ -97,7 +96,7 @@ const Portfolio = () => {
                 <div className={css.projectStack}>{p.stack.join(" · ")}</div>
                 <div className={css.projectDesc}>{p.desc}</div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
         <div className={css.githubProjects}>

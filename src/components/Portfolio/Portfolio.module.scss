@@ -163,16 +163,20 @@
 .allReposBtn {
   padding: 0.5rem 1.3rem;
   border-radius: 18px;
-  background: #EEC048;
-  color: #286F6C;
+  background: linear-gradient(90deg, #EEC048, #229ED9, #286F6C, #EEC048);
+  background-size: 300% 100%;
+  background-position: 0% 50%;
+  color: #fff;
   font-weight: 700;
   font-size: 1.01rem;
   text-decoration: none;
   box-shadow: 0 2px 12px rgba(40,111,108,0.08);
-  transition: background 0.18s, color 0.18s;
+  transition: background-position 0.7s cubic-bezier(0.4,0,0.2,1), color 0.18s;
+  border: none;
+  outline: none;
 }
 .allReposBtn:hover {
-  background: #286F6C;
+  background-position: 100% 50%;
   color: #fff;
 }
 

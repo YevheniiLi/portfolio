@@ -7,12 +7,12 @@ const Footer = () => {
       <a className="anchor" id="contacts"></a>
       <div className={`yPaddings innerWidth ${css.container}`}>
         <div className={`flexCenter ${css.heading}`}>
-          <h5 className="primaryText" style={{ color: '#286F6C' }}>Get in touch</h5>
+          <h5 className="primaryText" style={{ color: '#286F6C',paddingBottom: '2rem' }}>Get in touch</h5>
         </div>
         <div className={`flexCenter`}>
           <span className={css.subheading}>
             <span className={css.onlineDot}></span>
-            <span style={{ color: '#286F6C', fontFamily: 'Montserrat, Inter, Arial, sans-serif', fontWeight: 500, fontSize: '1.08rem', letterSpacing: '0.02em' }}>
+            <span style={{ color: '#286F6C', fontFamily: 'Montserrat, Inter, Arial, sans-serif', fontWeight: 500, fontSize: '1.08rem', letterSpacing: '0.02em', }}>
               I&apos;m always available
             </span>
           </span>
@@ -50,6 +50,11 @@ const Footer = () => {
             </div>
           </div>
           <div className={css.decorLine}></div>
+          <div className={css.madeByWrap}>
+            <span className={css.madeByText}>
+              made by <span className={css.madeByName}>Yevhenii Lymarenko</span>
+            </span>
+          </div>
         </footer>
         </div>
       </div>

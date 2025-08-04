@@ -1,3 +1,13 @@
+.madeByIcon {
+  display: inline-block;
+  margin-right: 0.32em;
+  vertical-align: middle;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.madeByName:hover .madeByIcon {
+  opacity: 1;
+}
 .madeByWrap {
   width: 100%;
   text-align: center;
@@ -5,45 +15,71 @@
   margin-bottom: 0.2rem;
 }
 .madeByText {
-  color: #229ED9;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18em;
+  color: #222;
+  background: linear-gradient(90deg, #f8fafc 0%, #eaf6f5 100%);
+  border-radius: 18px;
+  padding: 0.32em 1.1em;
   font-weight: 500;
-  line-height: 1.7;
-  font-size: 1.15rem;
-  font-family: 'Inter', 'Montserrat', 'Eudoxus Sans', sans-serif;
-  letter-spacing: 0.05em;
+  font-size: 1.02rem;
+  font-family: 'Inter', 'Montserrat', 'Eudoxus Sans', Arial, sans-serif;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 12px rgba(40,111,108,0.07);
+  border: 1.5px solid #eec048;
+  margin: 0 auto;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.madeByText:hover {
+  box-shadow: 0 4px 18px #eec04833;
+  border-color: #229ED9;
+}
+.madeByIcon {
+  display: inline-block;
+  margin-right: 0.32em;
+  vertical-align: middle;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.madeByName:hover .madeByIcon {
+  opacity: 1;
 }
 .madeByName {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 1.13rem;
+  font-family: 'Pacifico', 'Montserrat', 'Inter', cursive, sans-serif;
+  font-weight: 400;
+  font-size: 1.22rem;
   color: #229ED9;
-  padding: 0.12em 0.45em;
-  border: 1px solid gray;
-  border-radius: 14px;
-  background: linear-gradient(90deg, #f8fafc 0%, #eaf6f5 100%);
-  box-shadow: 0 2px 12px rgba(40,111,108,0.08);
-  letter-spacing: 0.07em;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  letter-spacing: 0.09em;
 }
 .madeByText {
-  color: #888;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18em;
+  color: #222;
+  background: linear-gradient(90deg, #f8fafc 0%, #eaf6f5 100%);
+  border-radius: 18px;
+  padding: 0.32em 1.1em;
+  font-weight: 500;
+  font-size: 1.02rem;
   font-family: 'Inter', 'Montserrat', 'Eudoxus Sans', Arial, sans-serif;
-  letter-spacing: 0.03em;
-  background: none;
-  border-radius: 0;
-  padding: 0;
-  box-shadow: none;
-  display: inline;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 12px rgba(40,111,108,0.07);
+  border: 1.5px solid #eec048;
+  margin: 0 auto;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.madeByText:hover {
+  box-shadow: 0 4px 18px #eec04833;
+  border-color: #229ED9;
 }
 .madeByName {
   font-family: 'Agbalumo', 'Montserrat', 'Inter', cursive, sans-serif;
   font-weight: 600;
-  font-size: 0.98rem;
-  color: #444;
+  font-size: 1.08rem;
+  color: #229ED9;
   letter-spacing: 0.09em;
+  margin-left: 0.18em;
 }
 
 @import "../../styles/contants.scss";

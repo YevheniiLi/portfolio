@@ -52,7 +52,7 @@ const Footer = () => {
           <div className={css.decorLine}></div>
           <div className={css.madeByWrap}>
             <span className={css.madeByText}>
-              made by <span className={css.madeByName}>Yevhenii Lymarenko</span>
+            made by <span className={css.madeByName}>Yevhenii Lymarenko</span>
             </span>
           </div>
         </footer>

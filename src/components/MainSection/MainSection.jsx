@@ -1,7 +1,7 @@
 import css from "./MainSection.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../../utils/motion";
-import { WhatDoIHelp } from "../../utils/data";
+import { WhatDoIHelp, techSkills } from "../../utils/data";
 
 const MainSection = () => {
   return (
@@ -78,7 +78,8 @@ const MainSection = () => {
           >
             About me
           </motion.span>
-          {WhatDoIHelp.map((paragraph, i) => (
+          {/* Only first and third about paragraphs */}
+          {[WhatDoIHelp[0], WhatDoIHelp[2]].map((paragraph, i) => (
             <motion.span
               className={css.aboutText}
               key={i}
@@ -90,6 +91,22 @@ const MainSection = () => {
               {paragraph}
             </motion.span>
           ))}
+
+          {/* Tech Stack Section */}
+          <motion.div
+            className={css.techStackBlock}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, type: "spring" }}
+            viewport={{ once: true }}
+          >
+            <div className={css.techStackTitle}>Tech Stack</div>
+            <div className={css.techStackGrid}>
+              {techSkills.map((skill, idx) => (
+                <span className={css.techSkillTag} key={idx}>{skill}</span>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </motion.div>
     </section>

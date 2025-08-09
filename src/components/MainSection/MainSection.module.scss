@@ -1,3 +1,44 @@
+.techStackBlock {
+  margin-top: 1.2rem;
+  padding: 0.3rem 0 0 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+.techStackTitle {
+  font-size: 1.01rem;
+  font-weight: 600;
+  color: #229ED9;
+  letter-spacing: 0.2px;
+  margin-bottom: 0.1rem;
+  font-family: 'Eudoxus Sans', sans-serif;
+}
+.techStackGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.4rem;
+}
+.techSkillTag {
+  background: #f8fafc;
+  color: #286F6C;
+  font-size: 0.93rem;
+  font-family: 'Inter', 'Eudoxus Sans', sans-serif;
+  padding: 0.22em 0.7em;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: none;
+  transition: background 0.18s, color 0.18s, transform 0.14s;
+  cursor: default;
+}
+.techSkillTag:hover {
+  background: #e0f7fa;
+  color: #229ED9;
+  transform: scale(1.04);
+}
 @media (max-width: 600px) {
   .wrapper {
     background: #fff;

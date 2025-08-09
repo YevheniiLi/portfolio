@@ -123,10 +123,11 @@
   animation: footerPulse 1s infinite;
 }
 
+
 .contact {
   display: flex;
   gap: 2.5rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 2.2rem 0.5rem 2.2rem;
 }
 
 .contactItem {
@@ -231,10 +232,11 @@
 
 @media (max-width: 600px) {
   .contact {
-    flex-wrap: wrap;
     gap: 0.7rem;
     justify-content: center;
     margin-top: 1.2rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
   }
   .social {
     width: 44px;

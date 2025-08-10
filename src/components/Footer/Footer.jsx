@@ -28,7 +28,7 @@ const Footer = () => {
                 </a>
                 <span className={css.contactLabel}>Email</span>
               </div>
-              <span className={css.dotDecor}></span>
+              {/* <span className={css.dotDecor}></span> */}
               <div className={css.contactItem}>
                 <a href="https://t.me/eyeije" target="_blank" rel="noreferrer" className={`${css.social} ${css.telegram}`}> 
                   <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ const Footer = () => {
                 </a>
                 <span className={css.contactLabel}>Telegram</span>
               </div>
-              <span className={css.dotDecor}></span>
+              {/* <span className={css.dotDecor}></span> */}
               <div className={css.contactItem}>
                 <a href="tel:+34692142247" target="_blank" rel="noreferrer" className={`${css.social} ${css.whatsapp}`}> 
                   <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

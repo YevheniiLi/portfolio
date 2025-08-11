@@ -69,7 +69,7 @@ const MainSection = () => {
           </motion.div>
         </div>
         <div className={css.rightBlock}>
-          <motion.span
+          {/* <motion.span
             className={css.aboutTitle}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -77,8 +77,7 @@ const MainSection = () => {
             viewport={{ once: true }}
           >
             About me
-          </motion.span>
-          {/* Only first and third about paragraphs */}
+          </motion.span> */}
           {[WhatDoIHelp[0], WhatDoIHelp[2]].map((paragraph, i) => (
             <motion.span
               className={css.aboutText}
